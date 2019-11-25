@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v3.0": {
       "GL.ReiDoAlmoco.Domain/1.0.0": {
         "dependencies": {
-          "FluentValidation": "8.5.1"
+          "FluentValidation": "8.5.1",
+          "MediatR": "7.0.0"
         },
         "runtime": {
           "GL.ReiDoAlmoco.Domain.dll": {}
@@ -22,6 +23,14 @@
           "lib/netstandard2.0/FluentValidation.dll": {
             "assemblyVersion": "8.0.0.0",
             "fileVersion": "8.5.1.0"
+          }
+        }
+      },
+      "MediatR/7.0.0": {
+        "runtime": {
+          "lib/netstandard2.0/MediatR.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.0.0"
           }
         }
       },
@@ -40,6 +49,13 @@
       "sha512": "sha512-GoygZcMkCcve3UHZM3ITSzgrPdfjPSl5mRSQKL6BlV8aI0yi+shIAju7k6QirPESNGsKzn+r4ne0JmqsAGG/PA==",
       "path": "fluentvalidation/8.5.1",
       "hashPath": "fluentvalidation.8.5.1.nupkg.sha512"
+    },
+    "MediatR/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-sgfHxkBsmMlHOD564SnLqTvSbAuGlFiZfc6ybxBSI1wYV/2u+Y5TXtFoIhCISFg5/s/6aMvB338QC2JseHsjTA==",
+      "path": "mediatr/7.0.0",
+      "hashPath": "mediatr.7.0.0.nupkg.sha512"
     },
     "System.ComponentModel.Annotations/4.4.1": {
       "type": "package",

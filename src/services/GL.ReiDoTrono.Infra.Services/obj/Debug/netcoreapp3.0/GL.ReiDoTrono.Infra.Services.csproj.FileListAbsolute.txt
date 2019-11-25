@@ -5,3 +5,4 @@
 /Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoTrono.Infra.Services/obj/Debug/netcoreapp3.0/GL.ReiDoTrono.Infra.Services.AssemblyInfo.cs
 /Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoTrono.Infra.Services/obj/Debug/netcoreapp3.0/GL.ReiDoTrono.Infra.Services.dll
 /Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoTrono.Infra.Services/obj/Debug/netcoreapp3.0/GL.ReiDoTrono.Infra.Services.pdb
+/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoTrono.Infra.Services/obj/Debug/netcoreapp3.0/GL.ReiDoTrono.Infra.Services.csprojAssemblyReference.cache
