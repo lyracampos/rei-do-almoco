@@ -43,6 +43,10 @@
             "FluentValidation": {
               "target": "Package",
               "version": "[8.5.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             }
           },
           "imports": [
