@@ -1,5 +1,8 @@
 using System;
+using System.Threading.Tasks;
 using FluentValidation;
+using GL.ReiDoAlmoco.Domain.Interfaces;
+
 namespace GL.ReiDoAlmoco.Domain.Entities
 {
     public class Pretendente
@@ -21,8 +24,12 @@ namespace GL.ReiDoAlmoco.Domain.Entities
 
     public class PretendenteValidator : AbstractValidator<Pretendente>
     {
-        public PretendenteValidator()
+        private readonly IPretendenteRepositorio _repositorio;
+        
+        public PretendenteValidator(IPretendenteRepositorio repositorio)
         {
+            _repositorio = repositorio;
+
             RuleFor(p => p.Nome)
                 .NotEmpty()
                 .NotNull()
@@ -35,6 +42,14 @@ namespace GL.ReiDoAlmoco.Domain.Entities
                 .EmailAddress()
                     .WithMessage("Campo e-mail do pretendente é inválido.");
 
+            RuleFor(p => new { p.Id, p.Email }).Must(c => EmailDisponivel(c.Id, c.Email).Result)
+                .WithMessage("E-mail informado já esta em uso.");
         } 
+        public async Task<bool> EmailDisponivel(Guid id, string email)
+        {
+            var pretendente = await _repositorio.ObterPorEmailAsync(email);
+            if(pretendente == null) return true;
+            return (pretendente.Id == id);
+        }
     }
 }

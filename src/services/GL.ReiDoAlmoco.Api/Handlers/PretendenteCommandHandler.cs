@@ -30,7 +30,7 @@ namespace GL.ReiDoAlmoco.Api.Handlers
         public async Task<CommandResult> Handle(CriarPretendenteCommand request, CancellationToken cancellationToken)
         {
             var pretendente = new Domain.Entities.Pretendente(request.Nome, request.Email);
-            var validate = new PretendenteValidator().Validate(pretendente);
+            var validate = new PretendenteValidator(_pretendenteRepositorio).Validate(pretendente);
             if (!validate.IsValid)
             {
                 _logger.LogError(validate.Errors.FirstOrDefault().ErrorMessage);
@@ -44,7 +44,7 @@ namespace GL.ReiDoAlmoco.Api.Handlers
 
         public async Task<CommandResult> Handle(EditarPretendenteCommand request, CancellationToken cancellationToken)
         {
-            var pretendenteDb = await _pretendenteRepositorio.Obter(request.Id);
+            var pretendenteDb = await _pretendenteRepositorio.ObterAsync(request.Id);
             if (pretendenteDb == null)
             {
                 _logger.LogError($"[Editar pretendente] - pretendente {request.Id} não encontrato.");
@@ -53,7 +53,7 @@ namespace GL.ReiDoAlmoco.Api.Handlers
 
             pretendenteDb.AtualizarNome(request.Nome);
 
-            var validate = new PretendenteValidator().Validate(pretendenteDb);
+            var validate = new PretendenteValidator(_pretendenteRepositorio).Validate(pretendenteDb);
             if (!validate.IsValid)
             {
                 _logger.LogError("[Editar pretendente] - " + validate.Errors.FirstOrDefault().ErrorMessage);
@@ -67,7 +67,7 @@ namespace GL.ReiDoAlmoco.Api.Handlers
 
         public async Task<CommandResult> Handle(RemoverPretendenteCommand request, CancellationToken cancellationToken)
         {
-            var pretendenteDb = await _pretendenteRepositorio.Obter(request.Id);
+            var pretendenteDb = await _pretendenteRepositorio.ObterAsync(request.Id);
             if (pretendenteDb == null)
             {
                 _logger.LogError($"[Remover pretendente] - pretendente {request.Id} não encontrato.");

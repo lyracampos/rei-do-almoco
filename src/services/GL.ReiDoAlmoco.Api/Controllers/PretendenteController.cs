@@ -23,13 +23,13 @@ namespace GL.ReiDoAlmoco.Api.Controllers
         [HttpGet()]
         public async Task<IActionResult> Get()
         {
-            return Ok(await _pretendenteRepositorio.Listar());
+            return Ok(await _pretendenteRepositorio.ListarAsync());
         }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(Guid id)
         {
-            var pretendente = await _pretendenteRepositorio.Obter(id);
+            var pretendente = await _pretendenteRepositorio.ObterAsync(id);
             if (pretendente != null)
                 return Ok(pretendente);
             else
@@ -49,11 +49,12 @@ namespace GL.ReiDoAlmoco.Api.Controllers
             return BadRequest(model);
         }
 
-        [HttpPut]
-        public async Task<IActionResult> Put([FromBody] EditarPretendenteCommand model, CancellationToken cancellationToken)
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Put(Guid id,[FromBody] EditarPretendenteCommand model, CancellationToken cancellationToken)
         {
             if (ModelState.IsValid)
             {
+                model.Id = id;
                 var result = await _bus.Send(model, cancellationToken);
                 if (result.Sucesso)
                     return Ok(result.Mensagem);

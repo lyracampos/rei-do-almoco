@@ -1,0 +1,44 @@
+@model GL.ReiDoAlmoco.Site.Models.Pretendente.PretendenteListaModel
+@{
+    ViewData["Title"] = "Listar pretendentes";
+}
+
+@if (Model.TemPretendente)
+{
+ <div class="row">
+            <div class="col-12">
+                <a class="btn btn-success" asp-action="adicionar">Novo pretendente</a>
+            </div>
+        </div>
+        <br/>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">Nome</th>
+              <th scope="col">E-mail</th>
+              <th scope="col">Ações</th>
+            </tr>
+          </thead>
+          <tbody>
+              @foreach (var pretendente in Model.Pretendentes)
+              {
+                <tr>
+                  <td>@pretendente.Nome</td>
+                  <td>@pretendente.Email</td>
+                  <td>
+                    <a class="btn btn-secondary" asp-action="perfil" asp-controller="pretendentes" asp-route-id="@pretendente.Id">Perfil</a>
+                    <a class="btn  btn-primary" asp-action="editar" asp-controller="pretendentes" asp-route-id="@pretendente.Id">Editar</a>
+                    <a class="btn  btn-danger" asp-action="remover" asp-controller="pretendentes" asp-route-id="@pretendente.Id">Remover</a>
+                  </td>
+                </tr>
+              }
+          </tbody>
+        </table>
+}
+else
+{
+     <div class="text-center">
+            <h1 class="display-4">Lista de pretendentes</h1>
+            <p>Clique <a asp-controller="pretendentes" asp-action="adicionar">aqui</a> para criar os pretendentes ao trono.</p>
+        </div>
+}

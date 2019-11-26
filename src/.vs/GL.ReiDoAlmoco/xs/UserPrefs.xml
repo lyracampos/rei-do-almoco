@@ -1,9 +1,9 @@
 ﻿<Properties StartupConfiguration="{F3451B06-43E7-4055-A7AF-A5D90AB831C4}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="services/GL.ReiDoAlmoco.Api/Controllers/PretendenteController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="services/GL.ReiDoAlmoco.Api/Handlers/PretendenteCommandHandler.cs">
     <Files>
-      <File FileName="services/GL.ReiDoAlmoco.Domain/Commands/Pretendente/RemoverPretendenteCommand.cs" Line="2" Column="43" />
-      <File FileName="services/GL.ReiDoAlmoco.Domain/Commands/Pretendente/EditarPretendenteCommand.cs" Line="8" Column="30" />
-      <File FileName="services/GL.ReiDoAlmoco.Api/Controllers/PretendenteController.cs" Line="68" Column="31" />
+      <File FileName="services/GL.ReiDoAlmoco.Infra.Data/Repositories/PretendenteRepositorio.cs" Line="41" Column="67" />
+      <File FileName="services/GL.ReiDoAlmoco.Api/Controllers/PretendenteController.cs" Line="44" Column="1" />
+      <File FileName="services/GL.ReiDoAlmoco.Api/Handlers/PretendenteCommandHandler.cs" Line="31" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -11,9 +11,13 @@
           <Node name="GL.ReiDoAlmoco" expanded="True">
             <Node name="services" expanded="True">
               <Node name="GL.ReiDoAlmoco.Api" expanded="True">
-                <Node name="Controllers" expanded="True">
-                  <Node name="PretendenteController.cs" selected="True" />
+                <Node name="Controllers" expanded="True" />
+                <Node name="Handlers" expanded="True">
+                  <Node name="PretendenteCommandHandler.cs" selected="True" />
                 </Node>
+              </Node>
+              <Node name="GL.ReiDoAlmoco.Infra.Data" expanded="True">
+                <Node name="Repositories" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -27,6 +31,7 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Api/Controllers/PretendenteController.cs" relfile="services/GL.ReiDoAlmoco.Api/Controllers/PretendenteController.cs" line="41" column="1" />
+      <Breakpoint file="/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Api/Handlers/PretendenteCommandHandler.cs" relfile="services/GL.ReiDoAlmoco.Api/Handlers/PretendenteCommandHandler.cs" line="31" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />

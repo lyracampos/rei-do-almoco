@@ -1,0 +1,27 @@
+@model GL.ReiDoAlmoco.Site.Models.Pretendente.EditarModel
+@{
+    ViewData["Title"] = @Model.Nome;
+}
+<form asp-action="editar" asp-controller="pretendentes" method="post">
+    <div class="container">
+        <div class="text-center">
+            <h3>@ViewData["Title"]</h3>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-4 mx-auto">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" class="form-control" placeholder="Nome do pretendente" asp-for="@Model.Nome" />
+                    <span asp-validation-for="@Model.Nome" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 mx-auto">
+            <div class="form-group">
+                <button type="submit" class="btn btn-success col-12"> Salvar</button>
+            </div>
+        </div>
+    </div>
+</form>
