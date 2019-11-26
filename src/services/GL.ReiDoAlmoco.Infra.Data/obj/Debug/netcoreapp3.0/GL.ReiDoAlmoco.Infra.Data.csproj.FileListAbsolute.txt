@@ -6,3 +6,8 @@
 /Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Infra.Data/obj/Debug/netcoreapp3.0/GL.ReiDoAlmoco.Infra.Data.AssemblyInfo.cs
 /Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Infra.Data/obj/Debug/netcoreapp3.0/GL.ReiDoAlmoco.Infra.Data.dll
 /Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Infra.Data/obj/Debug/netcoreapp3.0/GL.ReiDoAlmoco.Infra.Data.pdb
+/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Infra.Data/bin/Debug/netcoreapp3.0/GL.ReiDoAlmoco.Infra.Data.runtimeconfig.json
+/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Infra.Data/bin/Debug/netcoreapp3.0/GL.ReiDoAlmoco.Infra.Data.runtimeconfig.dev.json
+/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Infra.Data/bin/Debug/netcoreapp3.0/GL.ReiDoAlmoco.Domain.dll
+/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Infra.Data/bin/Debug/netcoreapp3.0/GL.ReiDoAlmoco.Domain.pdb
+/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Infra.Data/obj/Debug/netcoreapp3.0/GL.ReiDoAlmoco.Infra.Data.csproj.CopyComplete

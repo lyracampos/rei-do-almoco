@@ -2,6 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using GL.ReiDoAlmoco.Domain.Interfaces;
+using GL.ReiDoAlmoco.Infra.Data.Context;
+using GL.ReiDoAlmoco.Infra.Data.Repositories;
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -26,6 +30,11 @@ namespace GL.ReiDoAlmoco.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            var assembly = AppDomain.CurrentDomain.Load("GL.ReiDoAlmoco.Api");
+            services.AddMediatR(assembly);
+            
+            services.AddScoped<ReiDoAlmocoContext>();
+            services.AddScoped<IPretendenteRepositorio, PretendenteRepositorio>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
