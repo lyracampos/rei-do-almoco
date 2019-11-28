@@ -1,26 +1,33 @@
 ﻿<Properties StartupConfiguration="{F3451B06-43E7-4055-A7AF-A5D90AB831C4}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="services/GL.ReiDoAlmoco.Api/Startup.cs">
-    <Files>
-      <File FileName="services/GL.ReiDoAlmoco.Api/Controllers/AvatarController.cs" Line="40" Column="38" />
-      <File FileName="services/GL.ReiDoAlmoco.Domain/Interfaces/IAvatarServico.cs" Line="2" Column="30" />
-      <File FileName="services/GL.ReiDoTrono.Infra.Services/Services/AvatarServico.cs" Line="40" Column="44" />
-      <File FileName="services/GL.ReiDoAlmoco.Api/Controllers/PretendenteController.cs" Line="1" Column="1" />
-      <File FileName="services/GL.ReiDoAlmoco.Api/Startup.cs" Line="32" Column="54" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="GL.ReiDoAlmoco" expanded="True">
-            <Node name="services" expanded="True">
-              <Node name="GL.ReiDoAlmoco.Api" expanded="True">
-                <Node name="Controllers" expanded="True" />
-                <Node name="Startup.cs" selected="True" />
-              </Node>
-              <Node name="GL.ReiDoAlmoco.Domain" expanded="True">
-                <Node name="Interfaces" expanded="True" />
-              </Node>
-              <Node name="GL.ReiDoTrono.Infra.Services" expanded="True">
-                <Node name="Services" expanded="True" />
+            <Node name="tests" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="GL.ReiDoAlmoco" expanded="True">
+            <Node name="tests" expanded="True">
+              <Node name="GL.ReiDoAlmoco.Api.Tests" expanded="True">
+                <Node name="GL" expanded="True">
+                  <Node name="ReiDoAlmoco" expanded="True">
+                    <Node name="Api" expanded="True">
+                      <Node name="Tests" expanded="True">
+                        <Node name="UnitTests" expanded="True">
+                          <Node name="CriarPretendenteCommandHandlerTests" expanded="True" />
+                          <Node name="EditarPretendenteCommandHandlerTests" expanded="True" />
+                          <Node name="RemoverPretendenteCommandHandlerTests" expanded="True">
+                            <Node name="RemoverPretendenterCommand Handler - retorna sucesso quando conseguir remover o pretendente" selected="True" />
+                          </Node>
+                        </Node>
+                      </Node>
+                    </Node>
+                  </Node>
+                </Node>
               </Node>
             </Node>
           </Node>
@@ -33,7 +40,9 @@
   <MonoDevelop.Ide.ItemProperties.services.GL.ReiDoAlmoco.Api PreferredExecutionTarget="/Applications/Firefox.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoTrono.Infra.Services/Services/AvatarServico.cs" relfile="services/GL.ReiDoTrono.Infra.Services/Services/AvatarServico.cs" line="26" column="1" />
+      <Breakpoint file="/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/tests/GL.ReiDoAlmoco.Api.Tests/UnitTests/CriarPretendenteCommandHandlerTests.cs" relfile="tests/GL.ReiDoAlmoco.Api.Tests/UnitTests/CriarPretendenteCommandHandlerTests.cs" line="40" column="1" />
+      <Breakpoint file="/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/tests/GL.ReiDoAlmoco.Api.Tests/UnitTests/RemoverPretendenteCommandHandlerTests.cs" relfile="tests/GL.ReiDoAlmoco.Api.Tests/UnitTests/RemoverPretendenteCommandHandlerTests.cs" line="17" column="1" />
+      <Breakpoint file="/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/tests/GL.ReiDoAlmoco.Api.Tests/UnitTests/RemoverPretendenteCommandHandlerTests.cs" relfile="tests/GL.ReiDoAlmoco.Api.Tests/UnitTests/RemoverPretendenteCommandHandlerTests.cs" line="30" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />

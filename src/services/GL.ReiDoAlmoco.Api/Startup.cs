@@ -2,7 +2,7 @@ using System;
 using GL.ReiDoAlmoco.Domain.Interfaces;
 using GL.ReiDoAlmoco.Infra.Data.Context;
 using GL.ReiDoAlmoco.Infra.Data.Repositories;
-using GL.ReiDoTrono.Infra.Services.Services;
+using GL.ReiDoALmoco.Infra.Services.Services;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;

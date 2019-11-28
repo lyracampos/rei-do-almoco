@@ -34,8 +34,7 @@ namespace GL.ReiDoAlmoco.Api.Controllers
             var pretendente = await _pretendenteRepositorio.ObterAsync(id);
             if (pretendente != null)
                 return Ok(pretendente);
-            else
-                return NotFound("Pretendente não encontrato.");
+            return NotFound("Pretendente não encontrato.");
         }
 
         [HttpPost]

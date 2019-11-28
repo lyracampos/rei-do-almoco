@@ -1399,19 +1399,18 @@
           "bin/placeholder/GL.ReiDoAlmoco.Infra.Data.dll": {}
         }
       },
-      "GL.ReiDoTrono.Infra.Services/1.0.0": {
+      "GL.ReiDoAlmoco.Infra.Services/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.0",
         "dependencies": {
           "GL.ReiDoAlmoco.Domain": "1.0.0",
-          "Microsoft.Extensions.Configuration": "3.0.1",
           "Microsoft.Extensions.Logging": "3.0.1"
         },
         "compile": {
-          "bin/placeholder/GL.ReiDoTrono.Infra.Services.dll": {}
+          "bin/placeholder/GL.ReiDoAlmoco.Infra.Services.dll": {}
         },
         "runtime": {
-          "bin/placeholder/GL.ReiDoTrono.Infra.Services.dll": {}
+          "bin/placeholder/GL.ReiDoAlmoco.Infra.Services.dll": {}
         }
       }
     }
@@ -5224,10 +5223,10 @@
       "path": "../GL.ReiDoAlmoco.Infra.Data/GL.ReiDoAlmoco.Infra.Data.csproj",
       "msbuildProject": "../GL.ReiDoAlmoco.Infra.Data/GL.ReiDoAlmoco.Infra.Data.csproj"
     },
-    "GL.ReiDoTrono.Infra.Services/1.0.0": {
+    "GL.ReiDoAlmoco.Infra.Services/1.0.0": {
       "type": "project",
-      "path": "../GL.ReiDoTrono.Infra.Services/GL.ReiDoTrono.Infra.Services.csproj",
-      "msbuildProject": "../GL.ReiDoTrono.Infra.Services/GL.ReiDoTrono.Infra.Services.csproj"
+      "path": "../GL.ReiDoAlmoco.Infra.Services/GL.ReiDoAlmoco.Infra.Services.csproj",
+      "msbuildProject": "../GL.ReiDoAlmoco.Infra.Services/GL.ReiDoAlmoco.Infra.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5235,7 +5234,7 @@
       "GL.ReiDoAlmoco.Domain >= 1.0.0",
       "GL.ReiDoAlmoco.Domain.Shared >= 1.0.0",
       "GL.ReiDoAlmoco.Infra.Data >= 1.0.0",
-      "GL.ReiDoTrono.Infra.Services >= 1.0.0",
+      "GL.ReiDoAlmoco.Infra.Services >= 1.0.0",
       "MediatR >= 7.0.0",
       "MediatR.Extensions.Microsoft.DependencyInjection >= 7.0.0"
     ]
@@ -5277,8 +5276,8 @@
             "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Infra.Data/GL.ReiDoAlmoco.Infra.Data.csproj": {
               "projectPath": "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Infra.Data/GL.ReiDoAlmoco.Infra.Data.csproj"
             },
-            "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoTrono.Infra.Services/GL.ReiDoTrono.Infra.Services.csproj": {
-              "projectPath": "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoTrono.Infra.Services/GL.ReiDoTrono.Infra.Services.csproj"
+            "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Infra.Services/GL.ReiDoAlmoco.Infra.Services.csproj": {
+              "projectPath": "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Infra.Services/GL.ReiDoAlmoco.Infra.Services.csproj"
             }
           }
         }

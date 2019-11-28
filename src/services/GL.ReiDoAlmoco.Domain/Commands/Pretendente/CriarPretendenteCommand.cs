@@ -7,6 +7,11 @@ namespace GL.ReiDoAlmoco.Domain.Commands.Pretendente
         public CriarPretendenteCommand()
         {
         }
+        public CriarPretendenteCommand(string nome, string email)
+        {
+            Nome = nome;
+            Email = email;
+        }
         [Required(ErrorMessage = "Nome do pretendente é obrigatório.")]
         public string Nome { get; set; }
 

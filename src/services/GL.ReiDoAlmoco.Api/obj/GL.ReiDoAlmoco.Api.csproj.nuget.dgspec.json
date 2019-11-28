@@ -37,8 +37,8 @@
               "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Infra.Data/GL.ReiDoAlmoco.Infra.Data.csproj": {
                 "projectPath": "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Infra.Data/GL.ReiDoAlmoco.Infra.Data.csproj"
               },
-              "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoTrono.Infra.Services/GL.ReiDoTrono.Infra.Services.csproj": {
-                "projectPath": "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoTrono.Infra.Services/GL.ReiDoTrono.Infra.Services.csproj"
+              "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Infra.Services/GL.ReiDoAlmoco.Infra.Services.csproj": {
+                "projectPath": "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Infra.Services/GL.ReiDoAlmoco.Infra.Services.csproj"
               }
             }
           }
@@ -284,14 +284,14 @@
         }
       }
     },
-    "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoTrono.Infra.Services/GL.ReiDoTrono.Infra.Services.csproj": {
+    "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Infra.Services/GL.ReiDoAlmoco.Infra.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoTrono.Infra.Services/GL.ReiDoTrono.Infra.Services.csproj",
-        "projectName": "GL.ReiDoTrono.Infra.Services",
-        "projectPath": "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoTrono.Infra.Services/GL.ReiDoTrono.Infra.Services.csproj",
+        "projectUniqueName": "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Infra.Services/GL.ReiDoAlmoco.Infra.Services.csproj",
+        "projectName": "GL.ReiDoAlmoco.Infra.Services",
+        "projectPath": "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Infra.Services/GL.ReiDoAlmoco.Infra.Services.csproj",
         "packagesPath": "/Users/guilhermelyracampos/.nuget/packages/",
-        "outputPath": "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoTrono.Infra.Services/obj/",
+        "outputPath": "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Infra.Services/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -323,10 +323,6 @@
       "frameworks": {
         "netcoreapp3.0": {
           "dependencies": {
-            "Microsoft.Extensions.Configuration": {
-              "target": "Package",
-              "version": "[3.0.1, )"
-            },
             "Microsoft.Extensions.Logging": {
               "target": "Package",
               "version": "[3.0.1, )"

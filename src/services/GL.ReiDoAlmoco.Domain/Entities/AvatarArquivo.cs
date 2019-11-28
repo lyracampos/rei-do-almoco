@@ -14,7 +14,7 @@ namespace GL.ReiDoAlmoco.Domain.Entities
         public AvatarArquivo(string diretorio, IConfiguration configuration)
         {
             _configuration = configuration;
-            Diretorio = Path.Combine(_configuration["AvatarDiretorioPadrao"], "avatars/", diretorio);
+            Diretorio = Path.Combine(Path.Combine(Directory.GetCurrentDirectory(), "avatars/", diretorio));
         }
         public AvatarArquivo(string diretorio, IFormFile arquivo, IConfiguration configuration)
             : this(diretorio, configuration)
