@@ -6,3 +6,8 @@
 /Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoTrono.Infra.Services/obj/Debug/netcoreapp3.0/GL.ReiDoTrono.Infra.Services.dll
 /Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoTrono.Infra.Services/obj/Debug/netcoreapp3.0/GL.ReiDoTrono.Infra.Services.pdb
 /Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoTrono.Infra.Services/obj/Debug/netcoreapp3.0/GL.ReiDoTrono.Infra.Services.csprojAssemblyReference.cache
+/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoTrono.Infra.Services/bin/Debug/netcoreapp3.0/GL.ReiDoAlmoco.Domain.dll
+/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoTrono.Infra.Services/bin/Debug/netcoreapp3.0/GL.ReiDoAlmoco.Domain.Shared.dll
+/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoTrono.Infra.Services/bin/Debug/netcoreapp3.0/GL.ReiDoAlmoco.Domain.pdb
+/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoTrono.Infra.Services/bin/Debug/netcoreapp3.0/GL.ReiDoAlmoco.Domain.Shared.pdb
+/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoTrono.Infra.Services/obj/Debug/netcoreapp3.0/GL.ReiDoTrono.Infra.Services.csproj.CopyComplete

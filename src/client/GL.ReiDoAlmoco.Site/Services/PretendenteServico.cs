@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
+using GL.ReiDoAlmoco.Domain.Shared.Entities;
 using GL.ReiDoAlmoco.Site.Models.Pretendente;
 using Microsoft.Extensions.Configuration;
 
@@ -20,19 +21,21 @@ namespace GL.ReiDoAlmoco.Site.Services
             _httpClient.BaseAddress = new Uri(_configuration["UrlApi"]);
         }
 
-        public async Task AdicionarAsync(AdicionarModel model)
+        public async Task<RequestResult> AdicionarAsync(AdicionarModel model)
         {
             using (var response = await _httpClient.PostAsJsonAsync("pretendente", model))
             {
-                response.EnsureSuccessStatusCode();
+                if (response.StatusCode == HttpStatusCode.NotFound)
+                    return null;
+                return await response.Content.ReadAsAsync<RequestResult>();
             }
         }
 
-        public async Task AtualizarAsync(EditarModel model)
+        public async Task<RequestResult> AtualizarAsync(EditarModel model)
         {
             using (var response = await _httpClient.PutAsJsonAsync($"pretendente/{model.Id}", model))
             {
-                response.EnsureSuccessStatusCode();
+                return await response.Content.ReadAsAsync<RequestResult>();
             }
         }
 
@@ -61,11 +64,11 @@ namespace GL.ReiDoAlmoco.Site.Services
             }
         }
 
-        public async Task RemoverAsync(RemoverModel model)
+        public async Task<RequestResult> RemoverAsync(RemoverModel model)
         {
             using (var response = await _httpClient.DeleteAsync($"pretendente/{model.Id}"))
             {
-                response.EnsureSuccessStatusCode();
+                return await response.Content.ReadAsAsync<RequestResult>();
             }
         }
     }

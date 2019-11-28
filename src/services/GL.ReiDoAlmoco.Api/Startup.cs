@@ -1,19 +1,14 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using GL.ReiDoAlmoco.Domain.Interfaces;
 using GL.ReiDoAlmoco.Infra.Data.Context;
 using GL.ReiDoAlmoco.Infra.Data.Repositories;
+using GL.ReiDoTrono.Infra.Services.Services;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 
 namespace GL.ReiDoAlmoco.Api
 {
@@ -35,6 +30,7 @@ namespace GL.ReiDoAlmoco.Api
             
             services.AddScoped<ReiDoAlmocoContext>();
             services.AddScoped<IPretendenteRepositorio, PretendenteRepositorio>();
+            services.AddScoped<IAvatarServico, AvatarServico>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -50,6 +46,7 @@ namespace GL.ReiDoAlmoco.Api
             app.UseRouting();
 
             app.UseAuthorization();
+            app.UseStaticFiles();
 
             app.UseEndpoints(endpoints =>
             {

@@ -24,6 +24,7 @@
     ".NETCoreApp,Version=v3.0": {
       "GL.ReiDoAlmoco.Site/1.0.0": {
         "dependencies": {
+          "GL.ReiDoAlmoco.Domain.Shared": "1.0.0",
           "Microsoft.AspNet.WebApi.Client": "5.2.7",
           "Microsoft.AspNetCore.Antiforgery": "3.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.0.0.0",
@@ -1167,6 +1168,14 @@
           "System.Text.Encoding": "4.3.0",
           "System.Threading": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0"
+        }
+      },
+      "GL.ReiDoAlmoco.Domain.Shared/1.0.0": {
+        "runtime": {
+          "GL.ReiDoAlmoco.Domain.Shared.dll": {}
+        },
+        "compile": {
+          "GL.ReiDoAlmoco.Domain.Shared.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.0.0.0": {
@@ -3470,6 +3479,11 @@
       "sha512": "sha512-IiUbPxbemqBuCRskuuobjJV1Lw0iJm+vNOH7drNHsj95EM2vVnBY4j0GtweZYQkMpwgFBwokka3V2k0Cca/RMw==",
       "path": "system.xml.xmldocument/4.3.0",
       "hashPath": "system.xml.xmldocument.4.3.0.nupkg.sha512"
+    },
+    "GL.ReiDoAlmoco.Domain.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Microsoft.AspNetCore.Antiforgery/3.0.0.0": {
       "type": "referenceassembly",

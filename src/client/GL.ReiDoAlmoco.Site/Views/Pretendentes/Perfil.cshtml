@@ -11,13 +11,16 @@
             <label class="text-bold" for="nome">Nome:</label>
             <label id="nome">@Model.Nome</label>
         </div>
+         <div class="form-group">
+             <label for="email">E-mail:</label>
+            <label id="email">@Model.Email</label>
+        </div>
     </div>
 </div>
 <div class="row">
-    <div class="col-4 mx-auto">
+    <div class="col-4 mx-auto img-fluid">
         <div class="form-group">
-            <label for="email">E-mail:</label>
-            <label id="email">@Model.Email</label>
+            <img class="text-center" height="200" width="200" id="imgAvatar" src="/avatar/imagem/@Model.Id"/>
         </div>
     </div>
 </div>

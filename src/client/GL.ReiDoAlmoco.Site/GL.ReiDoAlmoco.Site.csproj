@@ -10,8 +10,15 @@
 
   <ItemGroup>
     <Folder Include="Services\" />
+    <Folder Include="Views\Avatar\" />
+    <Folder Include="Models\Avatar\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.7" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\services\GL.ReiDoAlmoco.Domain.Shared\GL.ReiDoAlmoco.Domain.Shared.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
   </ItemGroup>
 </Project>

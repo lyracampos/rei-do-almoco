@@ -14,6 +14,7 @@
         <table class="table table-bordered">
           <thead>
             <tr>
+              <th scope="col"></th>
               <th scope="col">Nome</th>
               <th scope="col">E-mail</th>
               <th scope="col">Ações</th>
@@ -23,12 +24,18 @@
               @foreach (var pretendente in Model.Pretendentes)
               {
                 <tr>
+                  <td>
+                      <img class="text-center" height="40" width="40"
+                         id="imgAvatar"
+                         src="/avatar/imagem/@pretendente.Id"/>
+                  </td>
                   <td>@pretendente.Nome</td>
                   <td>@pretendente.Email</td>
                   <td>
                     <a class="btn btn-secondary" asp-action="perfil" asp-controller="pretendentes" asp-route-id="@pretendente.Id">Perfil</a>
-                    <a class="btn  btn-primary" asp-action="editar" asp-controller="pretendentes" asp-route-id="@pretendente.Id">Editar</a>
-                    <a class="btn  btn-danger" asp-action="remover" asp-controller="pretendentes" asp-route-id="@pretendente.Id">Remover</a>
+                    <a class="btn btn-primary" asp-action="editar" asp-controller="pretendentes" asp-route-id="@pretendente.Id">Editar</a>
+                    <a class="btn btn-danger" asp-action="remover" asp-controller="pretendentes" asp-route-id="@pretendente.Id">Remover</a>
+                    <a class="btn btn-info" asp-action="alterar" asp-controller="avatar" asp-route-id="@pretendente.Id">Foto</a>
                   </td>
                 </tr>
               }

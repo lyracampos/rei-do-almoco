@@ -14344,6 +14344,11 @@
   "RootNamespace": "GL.ReiDoAlmoco.Site",
   "Documents": [
     {
+      "FilePath": "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/client/GL.ReiDoAlmoco.Site/Views/Avatar/Alterar.cshtml",
+      "TargetPath": "Views/Avatar/Alterar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/client/GL.ReiDoAlmoco.Site/Views/Pretendentes/Editar.cshtml",
       "TargetPath": "Views/Pretendentes/Editar.cshtml",
       "FileKind": "mvc"

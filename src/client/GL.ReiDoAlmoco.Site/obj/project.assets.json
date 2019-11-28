@@ -1441,6 +1441,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlDocument.dll": {}
         }
+      },
+      "GL.ReiDoAlmoco.Domain.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "compile": {
+          "bin/placeholder/GL.ReiDoAlmoco.Domain.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GL.ReiDoAlmoco.Domain.Shared.dll": {}
+        }
       }
     }
   },
@@ -5266,10 +5276,16 @@
         "system.xml.xmldocument.4.3.0.nupkg.sha512",
         "system.xml.xmldocument.nuspec"
       ]
+    },
+    "GL.ReiDoAlmoco.Domain.Shared/1.0.0": {
+      "type": "project",
+      "path": "../../services/GL.ReiDoAlmoco.Domain.Shared/GL.ReiDoAlmoco.Domain.Shared.csproj",
+      "msbuildProject": "../../services/GL.ReiDoAlmoco.Domain.Shared/GL.ReiDoAlmoco.Domain.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.0": [
+      "GL.ReiDoAlmoco.Domain.Shared >= 1.0.0",
       "Microsoft.AspNet.WebApi.Client >= 5.2.7"
     ]
   },
@@ -5300,7 +5316,11 @@
       },
       "frameworks": {
         "netcoreapp3.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Domain.Shared/GL.ReiDoAlmoco.Domain.Shared.csproj": {
+              "projectPath": "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Domain.Shared/GL.ReiDoAlmoco.Domain.Shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

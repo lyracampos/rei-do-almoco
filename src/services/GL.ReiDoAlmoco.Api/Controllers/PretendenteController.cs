@@ -1,9 +1,11 @@
 using System;
+using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
 using GL.ReiDoAlmoco.Domain.Commands.Pretendente;
 using GL.ReiDoAlmoco.Domain.Interfaces;
 using MediatR;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 namespace GL.ReiDoAlmoco.Api.Controllers
 {
@@ -41,10 +43,11 @@ namespace GL.ReiDoAlmoco.Api.Controllers
         {
             if (ModelState.IsValid)
             {
-                var result = await _bus.Send(model, cancellationToken);
-                if (result.Sucesso)
-                    return Ok(result.Mensagem);
-                return BadRequest(result.Mensagem);
+                var resultado = await _bus.Send(model, cancellationToken);
+                if (resultado.Sucesso)
+                    return Ok(resultado);
+
+                return BadRequest(resultado);
             }
             return BadRequest(model);
         }
@@ -55,10 +58,16 @@ namespace GL.ReiDoAlmoco.Api.Controllers
             if (ModelState.IsValid)
             {
                 model.Id = id;
-                var result = await _bus.Send(model, cancellationToken);
-                if (result.Sucesso)
-                    return Ok(result.Mensagem);
-                return BadRequest(result.Mensagem);
+                var resultado = await _bus.Send(model, cancellationToken);
+                if (resultado.Sucesso)
+                    return Ok(resultado);
+                else
+                {
+                    if (resultado.StatusCode == HttpStatusCode.NotFound)
+                        return NotFound(resultado);
+                    else
+                        return BadRequest(resultado);
+                }
             }
             return BadRequest(model);
         }
@@ -67,10 +76,16 @@ namespace GL.ReiDoAlmoco.Api.Controllers
         public async Task<IActionResult> Delete(Guid id, CancellationToken cancellationToken)
         {
             var command = new RemoverPretendenteCommand(id);
-            var result = await _bus.Send(command, cancellationToken);
-            if (result.Sucesso)
-                return Ok(result.Mensagem);
-            return BadRequest(result.Mensagem);
+            var resultado = await _bus.Send(command, cancellationToken);
+            if (resultado.Sucesso)
+                return Ok(resultado);
+            else
+            {
+                if (resultado.StatusCode == HttpStatusCode.NotFound)
+                    return NotFound(resultado);
+                else
+                    return BadRequest(resultado);
+            }
         }
     }
 }

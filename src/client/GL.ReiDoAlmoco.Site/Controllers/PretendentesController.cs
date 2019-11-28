@@ -32,8 +32,13 @@ namespace GL.ReiDoAlmoco.Site.Controllers
             if(!ModelState.IsValid)
                 return View(model);
             
-            await _servico.AdicionarAsync(model);
-            return RedirectToAction("Index");
+            var resultado = await _servico.AdicionarAsync(model);
+            if (resultado.Sucesso)
+                return RedirectToAction("Index");
+
+            foreach (string error in resultado.Errors)
+                ModelState.AddModelError("", error);
+            return View(model);
         }
         public async Task<IActionResult> Editar(Guid id)
         {
@@ -50,9 +55,14 @@ namespace GL.ReiDoAlmoco.Site.Controllers
         {
             if(!ModelState.IsValid)
                 return View(model);
-            
-            await _servico.AtualizarAsync(model);
-            return RedirectToAction("Index");
+
+            var resultado = await _servico.AtualizarAsync(model);
+            if (resultado.Sucesso)
+                return RedirectToAction("Index");
+
+            foreach (string error in resultado.Errors)
+                ModelState.AddModelError("", error);
+            return View(model);
         }
          public async Task<IActionResult> Remover(Guid id)
         {
@@ -69,9 +79,14 @@ namespace GL.ReiDoAlmoco.Site.Controllers
         {
             if(!ModelState.IsValid)
                 return View(model);
-            
-            await _servico.RemoverAsync(model);
-            return RedirectToAction("Index");
+
+            var resultado = await _servico.RemoverAsync(model);
+            if (resultado.Sucesso)
+                return RedirectToAction("Index");
+
+            foreach (string error in resultado.Errors)
+                ModelState.AddModelError("", error);
+            return View(model);
         }
     }
 }

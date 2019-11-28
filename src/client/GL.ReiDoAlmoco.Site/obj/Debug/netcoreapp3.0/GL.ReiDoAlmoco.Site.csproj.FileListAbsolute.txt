@@ -41,3 +41,6 @@
 /Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/client/GL.ReiDoAlmoco.Site/bin/Debug/netcoreapp3.0/Newtonsoft.Json.dll
 /Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/client/GL.ReiDoAlmoco.Site/bin/Debug/netcoreapp3.0/Newtonsoft.Json.Bson.dll
 /Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/client/GL.ReiDoAlmoco.Site/obj/Debug/netcoreapp3.0/Razor/Views/Pretendentes/Remover.cshtml.g.cs
+/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/client/GL.ReiDoAlmoco.Site/bin/Debug/netcoreapp3.0/GL.ReiDoAlmoco.Domain.Shared.dll
+/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/client/GL.ReiDoAlmoco.Site/bin/Debug/netcoreapp3.0/GL.ReiDoAlmoco.Domain.Shared.pdb
+/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/client/GL.ReiDoAlmoco.Site/obj/Debug/netcoreapp3.0/Razor/Views/Avatar/Alterar.cshtml.g.cs
