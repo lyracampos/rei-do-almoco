@@ -10,6 +10,7 @@
         "dependencies": {
           "GL.ReiDoAlmoco.Api": "1.0.0",
           "GL.ReiDoAlmoco.Domain": "1.0.0",
+          "GL.ReiDoAlmoco.Tests.Shared": "1.0.0",
           "MediatR": "7.0.0",
           "Microsoft.NET.Test.Sdk": "16.2.0",
           "Moq": "4.13.1",
@@ -1781,7 +1782,6 @@
           "GL.ReiDoAlmoco.Domain": "1.0.0",
           "GL.ReiDoAlmoco.Domain.Shared": "1.0.0",
           "GL.ReiDoAlmoco.Infra.Data": "1.0.0",
-          "GL.ReiDoAlmoco.Infra.Services": "1.0.0",
           "MediatR": "7.0.0",
           "MediatR.Extensions.Microsoft.DependencyInjection": "7.0.0"
         },
@@ -1795,7 +1795,8 @@
           "GL.ReiDoAlmoco.Domain.Shared": "1.0.0",
           "MediatR": "7.0.0",
           "Microsoft.AspNetCore.Http": "2.2.2",
-          "Microsoft.Extensions.Configuration": "3.0.1"
+          "Microsoft.Extensions.Configuration": "3.0.1",
+          "Microsoft.Extensions.Logging": "3.0.1"
         },
         "runtime": {
           "GL.ReiDoAlmoco.Domain.dll": {}
@@ -1816,13 +1817,12 @@
           "GL.ReiDoAlmoco.Infra.Data.dll": {}
         }
       },
-      "GL.ReiDoAlmoco.Infra.Services/1.0.0": {
+      "GL.ReiDoAlmoco.Tests.Shared/1.0.0": {
         "dependencies": {
-          "GL.ReiDoAlmoco.Domain": "1.0.0",
-          "Microsoft.Extensions.Logging": "3.0.1"
+          "GL.ReiDoAlmoco.Domain": "1.0.0"
         },
         "runtime": {
-          "GL.ReiDoAlmoco.Infra.Services.dll": {}
+          "GL.ReiDoAlmoco.Tests.Shared.dll": {}
         }
       }
     }
@@ -2952,7 +2952,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "GL.ReiDoAlmoco.Infra.Services/1.0.0": {
+    "GL.ReiDoAlmoco.Tests.Shared/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

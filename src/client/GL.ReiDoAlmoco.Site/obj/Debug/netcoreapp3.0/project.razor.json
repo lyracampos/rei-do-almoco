@@ -14349,8 +14349,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/client/GL.ReiDoAlmoco.Site/Views/Shared/_ListarVencedoresPorDia.cshtml",
+      "TargetPath": "Views/Shared/_ListarVencedoresPorDia.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/client/GL.ReiDoAlmoco.Site/Views/Pretendentes/Editar.cshtml",
       "TargetPath": "Views/Pretendentes/Editar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/client/GL.ReiDoAlmoco.Site/Views/Voto/Votar.cshtml",
+      "TargetPath": "Views/Voto/Votar.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14361,6 +14371,11 @@
     {
       "FilePath": "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/client/GL.ReiDoAlmoco.Site/Views/Pretendentes/Index.cshtml",
       "TargetPath": "Views/Pretendentes/Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/client/GL.ReiDoAlmoco.Site/Views/Voto/VotoConfirmado.cshtml",
+      "TargetPath": "Views/Voto/VotoConfirmado.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14379,11 +14394,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/client/GL.ReiDoAlmoco.Site/Views/Home/Privacy.cshtml",
-      "TargetPath": "Views/Home/Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/client/GL.ReiDoAlmoco.Site/Views/Pretendentes/Adicionar.cshtml",
       "TargetPath": "Views/Pretendentes/Adicionar.cshtml",
       "FileKind": "mvc"
@@ -14396,6 +14406,11 @@
     {
       "FilePath": "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/client/GL.ReiDoAlmoco.Site/Views/Shared/_Layout.cshtml",
       "TargetPath": "Views/Shared/_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/client/GL.ReiDoAlmoco.Site/Views/Shared/_ListarVencedoresPorSemana.cshtml",
+      "TargetPath": "Views/Shared/_ListarVencedoresPorSemana.cshtml",
       "FileKind": "mvc"
     },
     {

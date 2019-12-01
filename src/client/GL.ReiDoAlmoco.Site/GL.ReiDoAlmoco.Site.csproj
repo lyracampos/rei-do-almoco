@@ -12,6 +12,7 @@
     <Folder Include="Services\" />
     <Folder Include="Views\Avatar\" />
     <Folder Include="Models\Avatar\" />
+    <Folder Include="wwwroot\img\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.7" />

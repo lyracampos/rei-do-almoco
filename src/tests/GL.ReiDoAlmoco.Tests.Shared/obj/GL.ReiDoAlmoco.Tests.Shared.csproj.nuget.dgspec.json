@@ -4,14 +4,14 @@
     "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/tests/GL.ReiDoAlmoco.Tests.Shared/GL.ReiDoAlmoco.Tests.Shared.csproj": {}
   },
   "projects": {
-    "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/tests/GL.ReiDoAlmoco.Tests.Shared/GL.ReiDoAlmoco.Tests.Shared.csproj": {
+    "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Domain.Shared/GL.ReiDoAlmoco.Domain.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/tests/GL.ReiDoAlmoco.Tests.Shared/GL.ReiDoAlmoco.Tests.Shared.csproj",
-        "projectName": "GL.ReiDoAlmoco.Tests.Shared",
-        "projectPath": "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/tests/GL.ReiDoAlmoco.Tests.Shared/GL.ReiDoAlmoco.Tests.Shared.csproj",
+        "projectUniqueName": "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Domain.Shared/GL.ReiDoAlmoco.Domain.Shared.csproj",
+        "projectName": "GL.ReiDoAlmoco.Domain.Shared",
+        "projectPath": "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Domain.Shared/GL.ReiDoAlmoco.Domain.Shared.csproj",
         "packagesPath": "/Users/guilhermelyracampos/.nuget/packages/",
-        "outputPath": "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/tests/GL.ReiDoAlmoco.Tests.Shared/obj/",
+        "outputPath": "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Domain.Shared/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -39,24 +39,144 @@
       },
       "frameworks": {
         "netcoreapp3.0": {
-          "dependencies": {
-            "Microsoft.NET.Test.Sdk": {
-              "target": "Package",
-              "version": "[16.2.0, )"
-            },
-            "coverlet.collector": {
-              "target": "Package",
-              "version": "[1.0.1, )"
-            },
-            "xunit": {
-              "target": "Package",
-              "version": "[2.4.0, )"
-            },
-            "xunit.runner.visualstudio": {
-              "target": "Package",
-              "version": "[2.4.0, )"
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
             }
           },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Domain/GL.ReiDoAlmoco.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Domain/GL.ReiDoAlmoco.Domain.csproj",
+        "projectName": "GL.ReiDoAlmoco.Domain",
+        "projectPath": "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Domain/GL.ReiDoAlmoco.Domain.csproj",
+        "packagesPath": "/Users/guilhermelyracampos/.nuget/packages/",
+        "outputPath": "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/guilhermelyracampos/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://dotnet.myget.org/f/dotnet-core/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Domain.Shared/GL.ReiDoAlmoco.Domain.Shared.csproj": {
+                "projectPath": "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Domain.Shared/GL.ReiDoAlmoco.Domain.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[8.5.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/tests/GL.ReiDoAlmoco.Tests.Shared/GL.ReiDoAlmoco.Tests.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/tests/GL.ReiDoAlmoco.Tests.Shared/GL.ReiDoAlmoco.Tests.Shared.csproj",
+        "projectName": "GL.ReiDoAlmoco.Tests.Shared",
+        "projectPath": "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/tests/GL.ReiDoAlmoco.Tests.Shared/GL.ReiDoAlmoco.Tests.Shared.csproj",
+        "packagesPath": "/Users/guilhermelyracampos/.nuget/packages/",
+        "outputPath": "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/tests/GL.ReiDoAlmoco.Tests.Shared/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/guilhermelyracampos/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://dotnet.myget.org/f/dotnet-core/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Domain/GL.ReiDoAlmoco.Domain.csproj": {
+                "projectPath": "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Domain/GL.ReiDoAlmoco.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
           "imports": [
             "net461",
             "net462",

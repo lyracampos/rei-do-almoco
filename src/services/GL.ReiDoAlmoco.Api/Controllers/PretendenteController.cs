@@ -1,18 +1,18 @@
 using System;
-using System.Net;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using GL.ReiDoAlmoco.Domain.Commands.Pretendente;
 using GL.ReiDoAlmoco.Domain.Interfaces;
+using GL.ReiDoAlmoco.Domain.Shared.Entities;
 using MediatR;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 namespace GL.ReiDoAlmoco.Api.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
     [Produces("application/json")]
-    public class PretendenteController : ControllerBase
+    public class PretendenteController : ControllerPadrao
     {
         private readonly IPretendenteRepositorio _pretendenteRepositorio;
         private readonly IMediator _bus;
@@ -25,7 +25,10 @@ namespace GL.ReiDoAlmoco.Api.Controllers
         [HttpGet()]
         public async Task<IActionResult> Get()
         {
-            return Ok(await _pretendenteRepositorio.ListarAsync());
+            var pretendentes = await _pretendenteRepositorio.ListarAsync();
+            if(pretendentes != null && pretendentes.Any())
+                return Ok(await _pretendenteRepositorio.ListarAsync());
+            return NotFound(null);
         }
 
         [HttpGet("{id}")]
@@ -41,13 +44,7 @@ namespace GL.ReiDoAlmoco.Api.Controllers
         public async Task<IActionResult> Post([FromBody] CriarPretendenteCommand model, CancellationToken cancellationToken)
         {
             if (ModelState.IsValid)
-            {
-                var resultado = await _bus.Send(model, cancellationToken);
-                if (resultado.Sucesso)
-                    return Ok(resultado);
-
-                return BadRequest(resultado);
-            }
+                return RetornarRequestResult(await _bus.Send(model, cancellationToken));
             return BadRequest(model);
         }
 
@@ -57,16 +54,7 @@ namespace GL.ReiDoAlmoco.Api.Controllers
             if (ModelState.IsValid)
             {
                 model.Id = id;
-                var resultado = await _bus.Send(model, cancellationToken);
-                if (resultado.Sucesso)
-                    return Ok(resultado);
-                else
-                {
-                    if (resultado.StatusCode == HttpStatusCode.NotFound)
-                        return NotFound(resultado);
-                    else
-                        return BadRequest(resultado);
-                }
+                return RetornarRequestResult(await _bus.Send(model, cancellationToken));
             }
             return BadRequest(model);
         }
@@ -75,16 +63,7 @@ namespace GL.ReiDoAlmoco.Api.Controllers
         public async Task<IActionResult> Delete(Guid id, CancellationToken cancellationToken)
         {
             var command = new RemoverPretendenteCommand(id);
-            var resultado = await _bus.Send(command, cancellationToken);
-            if (resultado.Sucesso)
-                return Ok(resultado);
-            else
-            {
-                if (resultado.StatusCode == HttpStatusCode.NotFound)
-                    return NotFound(resultado);
-                else
-                    return BadRequest(resultado);
-            }
+            return RetornarRequestResult(await _bus.Send(command, cancellationToken));
         }
     }
 }

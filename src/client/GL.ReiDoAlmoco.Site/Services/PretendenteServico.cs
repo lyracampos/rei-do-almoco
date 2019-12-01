@@ -44,7 +44,7 @@ namespace GL.ReiDoAlmoco.Site.Services
             using (var response = await _httpClient.GetAsync("pretendente"))
             {
                 if (response.StatusCode == HttpStatusCode.NotFound)
-                    return null;
+                    return new PretendenteListaModel(null);
 
                 response.EnsureSuccessStatusCode();
                 var result = await response.Content.ReadAsAsync<IEnumerable<PretendenteModel>>();

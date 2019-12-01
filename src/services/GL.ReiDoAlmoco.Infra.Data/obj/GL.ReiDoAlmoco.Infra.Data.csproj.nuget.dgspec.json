@@ -111,6 +111,10 @@
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
               "version": "[3.0.1, )"
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[3.0.1, )"
             }
           },
           "imports": [

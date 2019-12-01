@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using FluentValidation;
 using GL.ReiDoAlmoco.Domain.Interfaces;
@@ -16,6 +17,7 @@ namespace GL.ReiDoAlmoco.Domain.Entities
         public Guid Id { get; private set; }
         public string Nome { get; private set; }
         public string Email { get; private set; }
+        public virtual ICollection<Voto> Votos { get; set; }
         public void AtualizarNome(string nome)
         {
             Nome = nome;

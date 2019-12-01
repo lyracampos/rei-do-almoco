@@ -27,7 +27,6 @@
           "GL.ReiDoAlmoco.Domain": "1.0.0",
           "GL.ReiDoAlmoco.Domain.Shared": "1.0.0",
           "GL.ReiDoAlmoco.Infra.Data": "1.0.0",
-          "GL.ReiDoAlmoco.Infra.Services": "1.0.0",
           "MediatR": "7.0.0",
           "MediatR.Extensions.Microsoft.DependencyInjection": "7.0.0",
           "Microsoft.AspNetCore.Antiforgery": "3.0.0.0",
@@ -1241,7 +1240,8 @@
           "GL.ReiDoAlmoco.Domain.Shared": "1.0.0",
           "MediatR": "7.0.0",
           "Microsoft.AspNetCore.Http": "2.2.2",
-          "Microsoft.Extensions.Configuration": "3.0.1"
+          "Microsoft.Extensions.Configuration": "3.0.1",
+          "Microsoft.Extensions.Logging": "3.0.1"
         },
         "runtime": {
           "GL.ReiDoAlmoco.Domain.dll": {}
@@ -1269,18 +1269,6 @@
         },
         "compile": {
           "GL.ReiDoAlmoco.Infra.Data.dll": {}
-        }
-      },
-      "GL.ReiDoAlmoco.Infra.Services/1.0.0": {
-        "dependencies": {
-          "GL.ReiDoAlmoco.Domain": "1.0.0",
-          "Microsoft.Extensions.Logging": "3.0.1"
-        },
-        "runtime": {
-          "GL.ReiDoAlmoco.Infra.Services.dll": {}
-        },
-        "compile": {
-          "GL.ReiDoAlmoco.Infra.Services.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.0.0.0": {
@@ -3593,11 +3581,6 @@
       "sha512": ""
     },
     "GL.ReiDoAlmoco.Infra.Data/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "GL.ReiDoAlmoco.Infra.Services/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

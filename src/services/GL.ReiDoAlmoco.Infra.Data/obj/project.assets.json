@@ -1380,7 +1380,8 @@
           "GL.ReiDoAlmoco.Domain.Shared": "1.0.0",
           "MediatR": "7.0.0",
           "Microsoft.AspNetCore.Http": "2.2.2",
-          "Microsoft.Extensions.Configuration": "3.0.1"
+          "Microsoft.Extensions.Configuration": "3.0.1",
+          "Microsoft.Extensions.Logging": "3.0.1"
         },
         "compile": {
           "bin/placeholder/GL.ReiDoAlmoco.Domain.dll": {}

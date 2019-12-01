@@ -10,9 +10,6 @@
     <ProjectReference Include="..\GL.ReiDoAlmoco.Domain.Shared\GL.ReiDoAlmoco.Domain.Shared.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
-    <ProjectReference Include="..\GL.ReiDoAlmoco.Infra.Services\GL.ReiDoAlmoco.Infra.Services.csproj">
-      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
-    </ProjectReference>
   </ItemGroup>
 
   <ItemGroup>

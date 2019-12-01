@@ -25,8 +25,16 @@ namespace GL.ReiDoAlmoco.Infra.Data.Context
             pretendente.ToTable("Pretendente");
             pretendente.Property(p => p.Nome).IsRequired().HasColumnType("nvarchar(100)");
             pretendente.Property(p => p.Email).IsRequired().HasColumnType("nvarchar(100)");
+
+            var voto = modelBuilder.Entity<Voto>();
+            voto.HasKey(p => p.Id);
+            voto.ToTable("Voto");
+            voto.Property(p => p.Quantidade).IsRequired();
+            voto.Property(p => p.PretendenteId).IsRequired();
+            voto.Property(p => p.Data).IsRequired();
         }
 
         public DbSet<Pretendente> Pretendentes { get; set; }
+        public DbSet<Voto> Votos { get; set; }
     }
 }

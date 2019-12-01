@@ -16,11 +16,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="IntegrationTests\" />
-    <Folder Include="UnitTests\" />
+    <Folder Include="Pretendentes\" />
+    <Folder Include="Pretendentes\Controllers\" />
+    <Folder Include="Pretendentes\Handlers\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\services\GL.ReiDoAlmoco.Domain\GL.ReiDoAlmoco.Domain.csproj" />
     <ProjectReference Include="..\..\services\GL.ReiDoAlmoco.Api\GL.ReiDoAlmoco.Api.csproj" />
+    <ProjectReference Include="..\GL.ReiDoAlmoco.Tests.Shared\GL.ReiDoAlmoco.Tests.Shared.csproj" />
   </ItemGroup>
 </Project>

@@ -6,21 +6,32 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using GL.ReiDoAlmoco.Site.Models;
+using GL.ReiDoAlmoco.Site.Services;
+using GL.ReiDoAlmoco.Site.Models.Voto;
+using Microsoft.Extensions.Configuration;
 
 namespace GL.ReiDoAlmoco.Site.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly ILogger _logger;
+        private readonly IVotoServico _votoServico;
+        private readonly IConfiguration _configuration;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IVotoServico votoServico, IConfiguration configuration)
         {
             _logger = logger;
+            _votoServico = votoServico;
+            _configuration = configuration;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            var vencedoresDiarios = await _votoServico.ListarVencedorDiarioAsync() ?? new ListaVencedorDiarioModel();
+            var vencedoresSemanais = await _votoServico.ListarVencedorSemanalAsync() ?? new ListaVencedorSemanalModel();
+            var periodoVotacao = await _votoServico.ObterPeriodoVotacao();
+            var model = new HomeModel(periodoVotacao, vencedoresDiarios, vencedoresSemanais);
+            return View(model);
         }
 
         public IActionResult Privacy()

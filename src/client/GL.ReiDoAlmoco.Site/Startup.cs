@@ -27,6 +27,7 @@ namespace GL.ReiDoAlmoco.Site
             services.AddControllersWithViews();
             services.AddScoped<IPretendenteServico, PretendenteServico>();
             services.AddScoped<IAvatarServico, AvatarServico>();
+            services.AddScoped<IVotoServico, VotoServico>();
             services.AddHttpClient();
         }
 

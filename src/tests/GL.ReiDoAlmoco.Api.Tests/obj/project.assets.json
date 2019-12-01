@@ -2686,7 +2686,6 @@
           "GL.ReiDoAlmoco.Domain": "1.0.0",
           "GL.ReiDoAlmoco.Domain.Shared": "1.0.0",
           "GL.ReiDoAlmoco.Infra.Data": "1.0.0",
-          "GL.ReiDoAlmoco.Infra.Services": "1.0.0",
           "MediatR": "7.0.0",
           "MediatR.Extensions.Microsoft.DependencyInjection": "7.0.0"
         },
@@ -2708,7 +2707,8 @@
           "GL.ReiDoAlmoco.Domain.Shared": "1.0.0",
           "MediatR": "7.0.0",
           "Microsoft.AspNetCore.Http": "2.2.2",
-          "Microsoft.Extensions.Configuration": "3.0.1"
+          "Microsoft.Extensions.Configuration": "3.0.1",
+          "Microsoft.Extensions.Logging": "3.0.1"
         },
         "compile": {
           "bin/placeholder/GL.ReiDoAlmoco.Domain.dll": {}
@@ -2742,18 +2742,17 @@
           "bin/placeholder/GL.ReiDoAlmoco.Infra.Data.dll": {}
         }
       },
-      "GL.ReiDoAlmoco.Infra.Services/1.0.0": {
+      "GL.ReiDoAlmoco.Tests.Shared/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.0",
         "dependencies": {
-          "GL.ReiDoAlmoco.Domain": "1.0.0",
-          "Microsoft.Extensions.Logging": "3.0.1"
+          "GL.ReiDoAlmoco.Domain": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/GL.ReiDoAlmoco.Infra.Services.dll": {}
+          "bin/placeholder/GL.ReiDoAlmoco.Tests.Shared.dll": {}
         },
         "runtime": {
-          "bin/placeholder/GL.ReiDoAlmoco.Infra.Services.dll": {}
+          "bin/placeholder/GL.ReiDoAlmoco.Tests.Shared.dll": {}
         }
       }
     }
@@ -8686,16 +8685,17 @@
       "path": "../../services/GL.ReiDoAlmoco.Infra.Data/GL.ReiDoAlmoco.Infra.Data.csproj",
       "msbuildProject": "../../services/GL.ReiDoAlmoco.Infra.Data/GL.ReiDoAlmoco.Infra.Data.csproj"
     },
-    "GL.ReiDoAlmoco.Infra.Services/1.0.0": {
+    "GL.ReiDoAlmoco.Tests.Shared/1.0.0": {
       "type": "project",
-      "path": "../../services/GL.ReiDoAlmoco.Infra.Services/GL.ReiDoAlmoco.Infra.Services.csproj",
-      "msbuildProject": "../../services/GL.ReiDoAlmoco.Infra.Services/GL.ReiDoAlmoco.Infra.Services.csproj"
+      "path": "../GL.ReiDoAlmoco.Tests.Shared/GL.ReiDoAlmoco.Tests.Shared.csproj",
+      "msbuildProject": "../GL.ReiDoAlmoco.Tests.Shared/GL.ReiDoAlmoco.Tests.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.0": [
       "GL.ReiDoAlmoco.Api >= 1.0.0",
       "GL.ReiDoAlmoco.Domain >= 1.0.0",
+      "GL.ReiDoAlmoco.Tests.Shared >= 1.0.0",
       "MediatR >= 7.0.0",
       "Microsoft.NET.Test.Sdk >= 16.2.0",
       "Moq >= 4.13.1",
@@ -8738,6 +8738,9 @@
             },
             "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Domain/GL.ReiDoAlmoco.Domain.csproj": {
               "projectPath": "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Domain/GL.ReiDoAlmoco.Domain.csproj"
+            },
+            "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/tests/GL.ReiDoAlmoco.Tests.Shared/GL.ReiDoAlmoco.Tests.Shared.csproj": {
+              "projectPath": "/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/tests/GL.ReiDoAlmoco.Tests.Shared/GL.ReiDoAlmoco.Tests.Shared.csproj"
             }
           }
         }
