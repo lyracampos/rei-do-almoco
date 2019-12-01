@@ -1,0 +1,81 @@
+@model GL.ReiDoAlmoco.Site.Models.Voto.VotarModel
+@{
+    ViewData["Title"] = "Eleger o Rei do Almoço";
+}
+<div class="container">
+    @if (@Model.PeriodoVotacao.VotacaoEncerrada)
+    {
+        <div class="text-center">
+            <h3 class="text-danger">@Model.PeriodoVotacao.Mensagem</h3>
+            <p>Clique <a asp-controller="home" asp-action="index">aqui</a> para criar os pretendentes ao trono.</p>
+        </div>
+    }
+    else
+    {
+        if (@Model.TemResultado)
+        {
+            <div>
+                <h3>Eleger o Rei do Almoço</h3>
+            </div>
+            <br />
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Votos</th>
+                        <th scope="col">Porcentagem</th>
+                        <th class="text-center" scope="col">Votar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                @foreach (var resultado in Model.ResultadoDoDia)
+                {
+                    <tr>
+                        <td>
+                        <img class="text-center" height="40" width="40"
+                        id="imgAvatar"
+                        src="/avatar/imagem/@resultado.PretendenteId"/>
+                        </td>
+                        <td>@resultado.NomePretendente</td>
+                        <td>@resultado.TotalDeVotos</td>
+                        <td>@resultado.Porcentagem</td>
+                        <td class="text-center">
+                                <a class="btn btn-primary" data-pretendente-id="@resultado.PretendenteId" id="click-votar">Votar</a>
+                        </td>
+                    </tr>
+                }
+                </tbody>
+            </table>
+        }
+        else 
+        {
+            <div class="text-center">
+                <h1 class="display-4">Nenhum candidato encontrado</h1>
+                <p>Clique <a asp-controller="pretendentes" asp-action="adicionar">aqui</a> para criar os pretendentes ao trono.</p>
+            </div>
+        }
+    }
+</div>
+
+@section Scripts{
+    <script>
+        $(document).ready(function() {
+            $(document).on('click', '#click-votar', function(){
+               var $pretendente = $(this).attr('data-pretendente-id');
+                $.ajax({
+                    type: "POST",
+                    url: "/voto/Votar",
+                    content: "application/json",
+                    data: { pretendenteId: $pretendente },
+                    success: function(data) {
+                        window.location = "/voto/votoconfirmado";
+                    },
+                    error: function (xhr, textStatus, error){
+                        console(error);
+                    }
+                });    
+            });
+        });
+    </script>
+}

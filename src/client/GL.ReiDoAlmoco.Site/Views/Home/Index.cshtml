@@ -1,0 +1,39 @@
+﻿@model GL.ReiDoAlmoco.Site.Models.HomeModel
+@{
+    ViewData["Title"] = "Rei do Almoço";
+}
+
+<div class="container">
+    <div class="section">
+        <div class="row">
+         <div class="col-8 mx-auto">
+             <h3 class="text-center">Bem vindo ao Rei do Almoço</h3>
+             @if (Model.PeriodoVotacao.VotacaoEncerrada)
+             {
+                <p class="text-center text-danger">@Model.PeriodoVotacao.Mensagem</p>   
+             }
+             else
+             {
+                <p class="text-center">@Model.PeriodoVotacao.Mensagem</p>
+                <div class="text-center">
+                     <a class="btn btn-success btn-lg" asp-action="votar" asp-controller="voto"> Votar agora</a>
+                </div>
+             }
+         </div>
+        </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="section">
+        <div class="row">
+            <div class="col-6">
+            <partial name="_ListarVencedoresPorDia" model="@Model.ListaDeVencedoresDiario"></partial>
+            </div>
+            <div class="col-6">
+                <partial name="_ListarVencedoresPorSemana" model="@Model.ListaDeVencedoresSemanal"></partial>
+            </div>
+        </div>
+    </div>
+</div>

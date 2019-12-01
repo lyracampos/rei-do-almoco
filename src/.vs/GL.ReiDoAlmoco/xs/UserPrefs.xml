@@ -1,10 +1,60 @@
 ﻿<Properties StartupConfiguration="{F3451B06-43E7-4055-A7AF-A5D90AB831C4}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="services/GL.ReiDoAlmoco.Api/Controllers/ControllerPadrao.cs">
+    <Files>
+      <File FileName="tests/GL.ReiDoAlmoco.Api.Tests/Pretendentes/Controllers/ControllerPutTests.cs" Line="39" Column="1" />
+      <File FileName="tests/GL.ReiDoAlmoco.Api.Tests/Pretendentes/Controllers/ControllerPostTests.cs" Line="45" Column="1" />
+      <File FileName="tests/GL.ReiDoAlmoco.Api.Tests/Pretendentes/Controllers/ControllerDeleteTests.cs" Line="38" Column="1" />
+      <File FileName="services/GL.ReiDoAlmoco.Api/Controllers/PretendenteController.cs" Line="66" Column="1" />
+      <File FileName="tests/GL.ReiDoAlmoco.Api.Tests/Pretendentes/Controllers/ControllerGetTests.cs" Line="1" Column="1" />
+      <File FileName="tests/GL.ReiDoAlmoco.Api.Tests/Pretendentes/Controllers/ControllerTestsBase.cs" Line="1" Column="1" />
+      <File FileName="services/GL.ReiDoAlmoco.Api/Controllers/ControllerPadrao.cs" Line="10" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="GL.ReiDoAlmoco" expanded="True" selected="True">
-            <Node name="services" expanded="True" />
+          <Node name="GL.ReiDoAlmoco" expanded="True">
+            <Node name="services" expanded="True">
+              <Node name="GL.ReiDoAlmoco.Api" expanded="True">
+                <Node name="Controllers" expanded="True">
+                  <Node name="ControllerPadrao.cs" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+            <Node name="tests" expanded="True">
+              <Node name="GL.ReiDoAlmoco.Api.Tests" expanded="True">
+                <Node name="Pretendentes" expanded="True">
+                  <Node name="Controllers" expanded="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="GL.ReiDoAlmoco" expanded="True">
+            <Node name="tests" expanded="True">
+              <Node name="GL.ReiDoAlmoco.Api.Tests" expanded="True">
+                <Node name="GL" expanded="True">
+                  <Node name="ReiDoAlmoco" expanded="True">
+                    <Node name="Api" expanded="True">
+                      <Node name="Tests" expanded="True">
+                        <Node name="Pretendentes" expanded="True">
+                          <Node name="Controllers" expanded="True">
+                            <Node name="ControllerDeleteTests" expanded="True">
+                              <Node name="Delete - retorna status notfound quando não encontrar pretendente no banco." selected="True" />
+                            </Node>
+                            <Node name="ControllerGetTests" expanded="True" />
+                            <Node name="ControllerPostTests" expanded="True" />
+                            <Node name="ControllerPutTests" expanded="True" />
+                          </Node>
+                        </Node>
+                      </Node>
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
           </Node>
         </State>
       </Pad>
@@ -14,7 +64,16 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.services.GL.ReiDoAlmoco.Api PreferredExecutionTarget="/Applications/Firefox.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Api/Controllers/VotoController.cs" relfile="services/GL.ReiDoAlmoco.Api/Controllers/VotoController.cs" line="39" column="1" />
+      <Breakpoint file="/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Domain/Services/VotoServico.cs" relfile="services/GL.ReiDoAlmoco.Domain/Services/VotoServico.cs" line="145" column="1" />
+      <Breakpoint file="/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/tests/GL.ReiDoAlmoco.Api.Tests/Pretendentes/.#EditarCommandHandlerTests.cs" relfile="tests/GL.ReiDoAlmoco.Api.Tests/Pretendentes/.#EditarCommandHandlerTests.cs" line="40" column="1" />
+      <Breakpoint file="/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/tests/GL.ReiDoAlmoco.Api.Tests/Pretendentes/Handlers/RemoverCommandHandlerTests.cs" relfile="tests/GL.ReiDoAlmoco.Api.Tests/Pretendentes/Handlers/RemoverCommandHandlerTests.cs" line="17" column="1" />
+      <Breakpoint file="/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/tests/GL.ReiDoAlmoco.Api.Tests/Pretendentes/Handlers/RemoverCommandHandlerTests.cs" relfile="tests/GL.ReiDoAlmoco.Api.Tests/Pretendentes/Handlers/RemoverCommandHandlerTests.cs" line="30" column="1" />
+      <Breakpoint file="/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/tests/GL.ReiDoAlmoco.Api.Tests/Pretendentes/Controllers/ControllerPostTests.cs" relfile="tests/GL.ReiDoAlmoco.Api.Tests/Pretendentes/Controllers/ControllerPostTests.cs" line="30" column="1" />
+      <Breakpoint file="/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/tests/GL.ReiDoAlmoco.Api.Tests/Pretendentes/Controllers/ControllerDeleteTests.cs" relfile="tests/GL.ReiDoAlmoco.Api.Tests/Pretendentes/Controllers/ControllerDeleteTests.cs" line="15" column="1" />
+      <Breakpoint file="/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/tests/GL.ReiDoAlmoco.Api.Tests/Pretendentes/Controllers/ControllerDeleteTests.cs" relfile="tests/GL.ReiDoAlmoco.Api.Tests/Pretendentes/Controllers/ControllerDeleteTests.cs" line="31" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

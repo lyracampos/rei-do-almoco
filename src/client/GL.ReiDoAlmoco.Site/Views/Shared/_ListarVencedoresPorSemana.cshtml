@@ -1,0 +1,46 @@
+﻿@model GL.ReiDoAlmoco.Site.Models.Voto.ListaVencedorSemanalModel
+@if (@Model.TemResultado)
+{
+    <h5>Vencedores das últimas semanas</h5>
+    <table class="table table-bordered tabela-votacao">
+        <thead>
+            <tr>
+            <th scope="col"></th>
+            <th scope="col">Semana</th>
+            <th scope="col">Vencedor</th>
+            <th scope="col">Votos</th>
+            <th scope="col">%</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var vencedor in Model.ListaDeVencedores)
+            {
+                <tr>
+                    <td>
+                        <img class="text-center" height="40" width="40"
+                            id="imgAvatar"
+                            src="/avatar/imagem/@vencedor.PretendenteId"/>
+                    </td>
+                     @if (vencedor.EmAndamento)
+                    {
+                        <td>@string.Format("{0} - {1}", vencedor.FormatarData(vencedor.InicioDaSemana),vencedor.FormatarData(vencedor.FimDaSemana)) - <span class="text-success">em andamento</span> </td>
+                    }
+                    else
+                    {
+                        <td>@string.Format("{0} - {1}", vencedor.FormatarData(vencedor.InicioDaSemana),vencedor.FormatarData(vencedor.FimDaSemana))</td>
+                    }
+                    <td>@vencedor.NomePretendente</td>
+                    <td>@vencedor.TotalDeVotos</td>
+                    <td>@vencedor.Porcentagem</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <div class="text-center">
+        <h5>Últimos vencedores</h5>
+        <p>Não há registro para serem exibidos.</p>
+    </div>
+}
