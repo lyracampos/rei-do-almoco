@@ -16,3 +16,12 @@ Configurar as chaves de conexão com banco de dados e período de validade das e
 ### configurando Site
 Configurar chave de da URL para comunicação com API
   * "UrlApi" : Url para comunicar com API
+
+
+### Ambiente de desenvolvimento
+* Plataforma: .Net Core 3.0
+* Linguagem de programação: C#
+* Banco de dados: Sql Server
+* Ide: Visual Studio Code / Visual Studio for Mac
+* OS: macOS
+* outros: EntityFrameworkCore, xunit, Moq, MediatR, FluentAssertions
