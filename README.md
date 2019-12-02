@@ -7,7 +7,7 @@ O rei do almoço é um app que proclamará o rei mais amado ou odiado pelos seus
   * rodar script sql que esta na pasta docs
 
 ### configurando API
-Configurar as chaves de conexão com banco de dados e período de validade das eleições do rei:
+Configurar as chaves de conexão com banco e período das eleições:
   * "ConnectionString" : string de conexão com banco de dados SQL Server.
   * "PeriodoDeVotacao:Inicio" : hora e minuto do início da votação ex: 10:00
   * "PeriodoDeVotacao:Fim" : hora e minuto do fim da votação ex: 12:00
@@ -22,6 +22,3 @@ Configurar chave de da URL para comunicação com API
 * Plataforma: .Net Core 3.0
 * Linguagem de programação: C#
 * Banco de dados: Sql Server
-* Ide: Visual Studio Code / Visual Studio for Mac
-* OS: macOS
-* outros: EntityFrameworkCore, xunit, Moq, MediatR, FluentAssertions
