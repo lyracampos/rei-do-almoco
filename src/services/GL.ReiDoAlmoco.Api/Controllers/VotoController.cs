@@ -10,7 +10,7 @@ namespace GL.ReiDoAlmoco.Api.Controllers
     [ApiController]
     [Route("api/[controller]")]
     [Produces("application/json")]
-    public class VotoController : ControllerBase
+    public class VotoController : ControllerPadrao
     {
         private readonly IVotoServico _votoServico;
         public VotoController(IVotoServico votoServico)
@@ -44,13 +44,7 @@ namespace GL.ReiDoAlmoco.Api.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> Computar(Guid id)
         {
-            var resultado = await _votoServico.ComputarAsync(new Voto(id));
-            if (resultado.Sucesso)
-                return Ok(resultado);
-
-            if (resultado.StatusCode == HttpStatusCode.NotFound)
-                return NotFound(resultado);
-            return BadRequest(resultado);
+            return RetornarRequestResult(await _votoServico.ComputarAsync(new Voto(id)));
         }
 
         [HttpGet]

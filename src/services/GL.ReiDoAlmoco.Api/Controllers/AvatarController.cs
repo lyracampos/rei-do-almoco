@@ -8,7 +8,7 @@ namespace GL.ReiDoAlmoco.Api.Controllers
     [ApiController]
     [Route("api/[controller]")]
     [Produces("application/json")]
-    public class AvatarController : ControllerBase
+    public class AvatarController : ControllerPadrao
     {
         private readonly IAvatarServico _avatarServico;
 
@@ -22,13 +22,7 @@ namespace GL.ReiDoAlmoco.Api.Controllers
         public async Task<IActionResult> Put(Guid id, [FromForm] IFormFile arquivo)
         {
             if (ModelState.IsValid)
-            {
-                var resultado = await _avatarServico.AdicionarAsync(id, arquivo);
-
-                if (resultado.Sucesso)
-                    return Ok(resultado);
-                return BadRequest(resultado);
-            }
+                return RetornarRequestResult(await _avatarServico.AdicionarAsync(id, arquivo));
             return BadRequest();
         }
 

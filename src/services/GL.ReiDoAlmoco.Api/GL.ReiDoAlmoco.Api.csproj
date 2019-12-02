@@ -20,4 +20,7 @@
   <ItemGroup>
     <None Remove="Avatars\cbcab627-3f90-4391-aa9c-c835a3003043.jpeg" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="avatars\" />
+  </ItemGroup>
 </Project>
