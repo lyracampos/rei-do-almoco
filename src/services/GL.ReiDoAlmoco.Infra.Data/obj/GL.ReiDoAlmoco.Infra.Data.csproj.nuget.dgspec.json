@@ -17,13 +17,14 @@
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/guilhermelyracampos/.nuget/NuGet/NuGet.Config"
+          "/Users/guilhermelyracampos/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://dotnet.myget.org/f/dotnet-core/api/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.0": {
@@ -70,13 +71,14 @@
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/guilhermelyracampos/.nuget/NuGet/NuGet.Config"
+          "/Users/guilhermelyracampos/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://dotnet.myget.org/f/dotnet-core/api/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.0": {
@@ -149,13 +151,14 @@
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/guilhermelyracampos/.nuget/NuGet/NuGet.Config"
+          "/Users/guilhermelyracampos/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://dotnet.myget.org/f/dotnet-core/api/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.0": {

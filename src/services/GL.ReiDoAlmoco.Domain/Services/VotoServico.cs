@@ -66,12 +66,14 @@ namespace GL.ReiDoAlmoco.Domain.Services
         private VencedorDoDia ObterVencedorDiario(IEnumerable<Voto> votos)
         {
             if (votos == null) return null;
+            var diaDosVotos = votos.Select(p => p.Data).FirstOrDefault();
             var periodoVotacao = ObterPeriodoVotacao();
+            var emAndamento = CompararData.MaiorIgualHoje(diaDosVotos) && CompararData.MenorIgualHoje(diaDosVotos);
             var totalDeVotos = votos.Sum(p => p.Quantidade);
             var vencedor = votos.OrderByDescending(p => p.Quantidade).FirstOrDefault();
             return new VencedorDoDia(
                         vencedor.Data, vencedor.PretendenteId, vencedor.Pretendente.Nome, vencedor.Quantidade,
-                        CalcularPorcentagem(vencedor.Quantidade, totalDeVotos), periodoVotacao.VotacaoAberta);
+                        CalcularPorcentagem(vencedor.Quantidade, totalDeVotos), emAndamento);
         }
         public async Task<ListaDoVencedorSemanal> ListarVencedorSemanalAsync()
         {
@@ -87,15 +89,15 @@ namespace GL.ReiDoAlmoco.Domain.Services
             foreach (var semana in semanas)
             {
                 var votosAgrupados = votos.OrderByDescending(p => p.Data).Where(p => p.Data.Date >= semana.Inicio.Date && p.Data.Date <= semana.Fim.Date).ToArray();
-                resultado.AdicionarVencedor(ObterVencedorSeanal(votosAgrupados, semana));
+                resultado.AdicionarVencedor(ObterVencedorSemanal(votosAgrupados, semana));
             }
             return resultado;
         }
-        private VencedorDaSemana ObterVencedorSeanal(IEnumerable<Voto> votos, DataInicioEFimDaSemana periodo)
+        private VencedorDaSemana ObterVencedorSemanal(IEnumerable<Voto> votos, DataInicioEFimDaSemana periodo)
         {
             if (votos == null) return null;
             var totalDeVotos = votos.Sum(p => p.Quantidade);
-            var emAndamento = (DateTime.UtcNow >= periodo.Inicio && DateTime.UtcNow <= periodo.Fim);
+            var emAndamento =  CompararData.MaiorIgualHoje(periodo.Inicio) && CompararData.MenorIgualHoje(periodo.Fim);
                 var vencedor = votos.OrderByDescending(p => p.Quantidade).FirstOrDefault();
             return new VencedorDaSemana(periodo.Inicio, periodo.Fim, vencedor.PretendenteId, vencedor.Pretendente.Nome, vencedor.Quantidade, CalcularPorcentagem(vencedor.Quantidade, totalDeVotos), emAndamento);
         }

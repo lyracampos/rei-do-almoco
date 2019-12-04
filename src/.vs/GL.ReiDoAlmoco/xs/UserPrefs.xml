@@ -1,56 +1,19 @@
 ﻿<Properties StartupConfiguration="{F3451B06-43E7-4055-A7AF-A5D90AB831C4}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="tests/GL.ReiDoAlmoco.Api.Tests/Pretendentes/Handlers/EditarCommandHandlerTests.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="services/GL.ReiDoAlmoco.Domain.Shared/Entities/DataCompare.cs">
     <Files>
-      <File FileName="tests/GL.ReiDoAlmoco.Domain.Tests/VotoServiceTests.cs" Line="98" Column="90" />
-      <File FileName="services/GL.ReiDoAlmoco.Domain/Services/VotoServico.cs" Line="50" Column="1" />
-      <File FileName="tests/GL.ReiDoAlmoco.Api.Tests/Pretendentes/Controllers/ControllerTestsBase.cs" Line="12" Column="26" />
-      <File FileName="services/GL.ReiDoAlmoco.Api/Controllers/AvatarController.cs" Line="25" Column="95" />
-      <File FileName="tests/GL.ReiDoAlmoco.Api.Tests/Pretendentes/Controllers/ControllerPutTests.cs" Line="1" Column="1" />
-      <File FileName="tests/GL.ReiDoAlmoco.Api.Tests/Pretendentes/Handlers/CriarCommandHandlerTests.cs" Line="1" Column="1" />
-      <File FileName="tests/GL.ReiDoAlmoco.Api.Tests/Pretendentes/Handlers/EditarCommandHandlerTests.cs" Line="1" Column="1" />
+      <File FileName="services/GL.ReiDoAlmoco.Domain/Services/VotoServico.cs" Line="53" Column="1" />
+      <File FileName="services/GL.ReiDoAlmoco.Api/Controllers/VotoController.cs" Line="39" Column="1" />
+      <File FileName="services/GL.ReiDoAlmoco.Api/appsettings.json" Line="12" Column="18" />
+      <File FileName="services/GL.ReiDoAlmoco.Domain.Shared/Entities/DataCompare.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="GL.ReiDoAlmoco" expanded="True">
             <Node name="services" expanded="True">
-              <Node name="GL.ReiDoAlmoco.Api" expanded="True">
-                <Node name="Controllers" expanded="True" />
-              </Node>
-              <Node name="GL.ReiDoAlmoco.Domain" expanded="True">
-                <Node name="Services" expanded="True" />
-              </Node>
-            </Node>
-            <Node name="tests" expanded="True">
-              <Node name="GL.ReiDoAlmoco.Api.Tests" expanded="True">
-                <Node name="Pretendentes" expanded="True">
-                  <Node name="Controllers" expanded="True" />
-                  <Node name="Handlers" expanded="True">
-                    <Node name="EditarCommandHandlerTests.cs" selected="True" />
-                  </Node>
-                </Node>
-              </Node>
-              <Node name="GL.ReiDoAlmoco.Domain.Tests" expanded="True" />
-              <Node name="GL.ReiDoAlmoco.Tests.Shared" expanded="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="GL.ReiDoAlmoco" expanded="True">
-            <Node name="tests" expanded="True">
-              <Node name="GL.ReiDoAlmoco.Domain.Tests" expanded="True">
-                <Node name="GL" expanded="True">
-                  <Node name="ReiDoAlmoco" expanded="True">
-                    <Node name="Domain" expanded="True">
-                      <Node name="Tests" expanded="True">
-                        <Node name="VotoServiceTests" expanded="True">
-                          <Node name="VotoServico ComputarAsync - retorna sucesso quando conseguir computar o voto" selected="True" />
-                        </Node>
-                      </Node>
-                    </Node>
-                  </Node>
+              <Node name="GL.ReiDoAlmoco.Domain.Shared" expanded="True">
+                <Node name="Entities" expanded="True">
+                  <Node name="DataCompare.cs" selected="True" />
                 </Node>
               </Node>
             </Node>
@@ -64,8 +27,6 @@
   <MonoDevelop.Ide.ItemProperties.services.GL.ReiDoAlmoco.Api PreferredExecutionTarget="/Applications/Firefox.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Api/Controllers/VotoController.cs" relfile="services/GL.ReiDoAlmoco.Api/Controllers/VotoController.cs" line="39" column="1" />
-      <Breakpoint file="/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Domain/Services/VotoServico.cs" relfile="services/GL.ReiDoAlmoco.Domain/Services/VotoServico.cs" line="145" column="1" />
       <Breakpoint file="/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/tests/GL.ReiDoAlmoco.Api.Tests/Pretendentes/.#EditarCommandHandlerTests.cs" relfile="tests/GL.ReiDoAlmoco.Api.Tests/Pretendentes/.#EditarCommandHandlerTests.cs" line="40" column="1" />
       <Breakpoint file="/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/tests/GL.ReiDoAlmoco.Api.Tests/Pretendentes/Handlers/RemoverCommandHandlerTests.cs" relfile="tests/GL.ReiDoAlmoco.Api.Tests/Pretendentes/Handlers/RemoverCommandHandlerTests.cs" line="17" column="1" />
       <Breakpoint file="/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/tests/GL.ReiDoAlmoco.Api.Tests/Pretendentes/Handlers/RemoverCommandHandlerTests.cs" relfile="tests/GL.ReiDoAlmoco.Api.Tests/Pretendentes/Handlers/RemoverCommandHandlerTests.cs" line="30" column="1" />
@@ -73,6 +34,7 @@
       <Breakpoint file="/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/tests/GL.ReiDoAlmoco.Api.Tests/Pretendentes/Controllers/ControllerDeleteTests.cs" relfile="tests/GL.ReiDoAlmoco.Api.Tests/Pretendentes/Controllers/ControllerDeleteTests.cs" line="15" column="1" />
       <Breakpoint file="/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/tests/GL.ReiDoAlmoco.Api.Tests/Pretendentes/Controllers/ControllerDeleteTests.cs" relfile="tests/GL.ReiDoAlmoco.Api.Tests/Pretendentes/Controllers/ControllerDeleteTests.cs" line="31" column="1" />
       <Breakpoint file="/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/tests/GL.ReiDoAlmoco.Domain.Tests/VotoServiceTests.cs" relfile="tests/GL.ReiDoAlmoco.Domain.Tests/VotoServiceTests.cs" line="35" column="1" />
+      <Breakpoint file="/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/tests/GL.ReiDoAlmoco.Domain.Tests/VotoServiceTests.cs" relfile="tests/GL.ReiDoAlmoco.Domain.Tests/VotoServiceTests.cs" line="83" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
