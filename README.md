@@ -1,10 +1,11 @@
 # rei-do-almoco
+
 O rei do almoço é um app que proclamará o rei mais amado ou odiado pelos seus súditos.
 
 # como configurar aplicação
 
 ### configurando banco de dados
-  * rodar script sql que esta na pasta docs
+  ** rodar script sql que esta na pasta docs **
 
 ### configurando API
 Configurar as chaves de conexão com banco e período das eleições:
