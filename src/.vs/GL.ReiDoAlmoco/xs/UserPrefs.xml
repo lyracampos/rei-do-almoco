@@ -1,20 +1,22 @@
 ﻿<Properties StartupConfiguration="{F3451B06-43E7-4055-A7AF-A5D90AB831C4}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="services/GL.ReiDoAlmoco.Domain.Shared/Entities/DataCompare.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="services/GL.ReiDoAlmoco.Domain/Services/VotoServico.cs">
     <Files>
-      <File FileName="services/GL.ReiDoAlmoco.Domain/Services/VotoServico.cs" Line="53" Column="1" />
-      <File FileName="services/GL.ReiDoAlmoco.Api/Controllers/VotoController.cs" Line="39" Column="1" />
-      <File FileName="services/GL.ReiDoAlmoco.Api/appsettings.json" Line="12" Column="18" />
-      <File FileName="services/GL.ReiDoAlmoco.Domain.Shared/Entities/DataCompare.cs" Line="1" Column="1" />
+      <File FileName="services/GL.ReiDoAlmoco.Domain/Services/VotoServico.cs" Line="100" Column="119" />
+      <File FileName="services/GL.ReiDoAlmoco.Api/Controllers/VotoController.cs" />
+      <File FileName="services/GL.ReiDoAlmoco.Api/appsettings.json" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="GL.ReiDoAlmoco" expanded="True">
             <Node name="services" expanded="True">
+              <Node name="GL.ReiDoAlmoco.Api" selected="True" />
+              <Node name="GL.ReiDoAlmoco.Domain" expanded="True">
+                <Node name="Dependencies" expanded="True" />
+                <Node name="Services" expanded="True" />
+              </Node>
               <Node name="GL.ReiDoAlmoco.Domain.Shared" expanded="True">
-                <Node name="Entities" expanded="True">
-                  <Node name="DataCompare.cs" selected="True" />
-                </Node>
+                <Node name="Entities" expanded="True" />
               </Node>
             </Node>
           </Node>
