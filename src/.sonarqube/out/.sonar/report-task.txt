@@ -1,0 +1,6 @@
+projectKey=GL.ReiDoAlmoco
+serverUrl=http://localhost:9000
+serverVersion=7.9.2.30863
+dashboardUrl=http://localhost:9000/dashboard?id=GL.ReiDoAlmoco
+ceTaskId=AW_GO5b-8kC9YKaUEZ0K
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AW_GO5b-8kC9YKaUEZ0K

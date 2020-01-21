@@ -1,0 +1,11 @@
+ñ
+å/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Api/Controllers/AvatarController.csutf-8ñ
+å/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Api/Controllers/ControllerPadrao.csutf-8õ
+ë/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Api/Controllers/PretendenteController.csutf-8î
+ä/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Api/Controllers/VotoController.csutf-8ú
+í/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Api/Handlers/PretendenteCommandHandler.csutf-8ö
+ê/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Api/Handlers/PretendenteEventHandler.csutf-8Ä
+w/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Api/Program.csutf-8Ä
+w/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Api/Startup.csutf-8j
+_/var/folders/fx/yq34m63x2nq47k019dx0k44c0000gn/T/.NETCoreApp,Version=v3.0.AssemblyAttributes.csutf-8≥
+ß/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Api/obj/Debug/netcoreapp3.0/GL.ReiDoAlmoco.Api.AssemblyInfo.csutf-8

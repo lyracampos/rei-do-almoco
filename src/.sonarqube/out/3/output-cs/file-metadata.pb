@@ -1,0 +1,11 @@
+õ
+ë/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Infra.Data/Context/ReiDoAlmocoContext.csutf-8±
+ß/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Infra.Data/Migrations/20191126130445_CriarTabelaPretendente.csutf-8º
+∞/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Infra.Data/Migrations/20191126130445_CriarTabelaPretendente.Designer.csutf-8ü
+ï/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Infra.Data/Migrations/20191129124039_Voto.csutf-8™
+û/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Infra.Data/Migrations/20191129124039_Voto.Designer.csutf-8≠
+°/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Infra.Data/Migrations/ReiDoAlmocoContextModelSnapshot.csutf-8§
+ö/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Infra.Data/Repositories/PretendenteRepositorio.csutf-8ù
+ì/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Infra.Data/Repositories/VotoRepositorio.csutf-8j
+_/var/folders/fx/yq34m63x2nq47k019dx0k44c0000gn/T/.NETCoreApp,Version=v3.0.AssemblyAttributes.csutf-8¡
+µ/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Infra.Data/obj/Debug/netcoreapp3.0/GL.ReiDoAlmoco.Infra.Data.AssemblyInfo.csutf-8

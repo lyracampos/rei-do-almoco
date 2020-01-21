@@ -1,0 +1,13 @@
+«
+¡/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/tests/GL.ReiDoAlmoco.Api.Tests/Pretendentes/Controllers/ControllerDeleteTests.csutf-8¨
+ž/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/tests/GL.ReiDoAlmoco.Api.Tests/Pretendentes/Controllers/ControllerGetTests.csutf-8©
+Ÿ/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/tests/GL.ReiDoAlmoco.Api.Tests/Pretendentes/Controllers/ControllerPostTests.csutf-8¨
+ž/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/tests/GL.ReiDoAlmoco.Api.Tests/Pretendentes/Controllers/ControllerPutTests.csutf-8©
+Ÿ/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/tests/GL.ReiDoAlmoco.Api.Tests/Pretendentes/Controllers/ControllerTestsBase.csutf-8¥
+›/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/tests/GL.ReiDoAlmoco.Api.Tests/Pretendentes/Handlers/CommandHandlerBase.csutf-8«
+¡/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/tests/GL.ReiDoAlmoco.Api.Tests/Pretendentes/Handlers/CriarCommandHandlerTests.csutf-8¬
+¢/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/tests/GL.ReiDoAlmoco.Api.Tests/Pretendentes/Handlers/EditarCommandHandlerTests.csutf-8­
+£/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/tests/GL.ReiDoAlmoco.Api.Tests/Pretendentes/Handlers/RemoverCommandHandlerTests.csutf-8‰
+~/Users/guilhermelyracampos/.nuget/packages/microsoft.net.test.sdk/16.2.0/build/netcoreapp1.0/Microsoft.NET.Test.Sdk.Program.csutf-8j
+_/var/folders/fx/yq34m63x2nq47k019dx0k44c0000gn/T/.NETCoreApp,Version=v3.0.AssemblyAttributes.csutf-8¼
+°/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/tests/GL.ReiDoAlmoco.Api.Tests/obj/Debug/netcoreapp3.0/GL.ReiDoAlmoco.Api.Tests.AssemblyInfo.csutf-8

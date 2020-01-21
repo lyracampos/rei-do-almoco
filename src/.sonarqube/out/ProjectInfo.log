@@ -1,0 +1,31 @@
+Product projects
+---------------------------------------
+/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Domain.Shared/GL.ReiDoAlmoco.Domain.Shared.csproj
+/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Domain/GL.ReiDoAlmoco.Domain.csproj
+/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Api/GL.ReiDoAlmoco.Api.csproj
+/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/services/GL.ReiDoAlmoco.Infra.Data/GL.ReiDoAlmoco.Infra.Data.csproj
+/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/client/GL.ReiDoAlmoco.Site/GL.ReiDoAlmoco.Site.csproj
+/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/tests/GL.ReiDoAlmoco.Tests.Shared/GL.ReiDoAlmoco.Tests.Shared.csproj
+
+
+Test projects
+---------------------------------------
+/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/tests/GL.ReiDoAlmoco.Api.Tests/GL.ReiDoAlmoco.Api.Tests.csproj
+/Users/guilhermelyracampos/Documents/profissional/projetos/git/rei-do-almoco/src/tests/GL.ReiDoAlmoco.Domain.Tests/GL.ReiDoAlmoco.Domain.Tests.csproj
+
+
+Invalid projects
+---------------------------------------
+{none}
+
+
+Skipped projects
+---------------------------------------
+{none}
+
+
+Excluded projects
+---------------------------------------
+{none}
+
+
