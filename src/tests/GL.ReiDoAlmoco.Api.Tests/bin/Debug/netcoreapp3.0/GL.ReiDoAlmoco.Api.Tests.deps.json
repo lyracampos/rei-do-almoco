@@ -15,6 +15,7 @@
           "Microsoft.NET.Test.Sdk": "16.2.0",
           "Moq": "4.13.1",
           "coverlet.collector": "1.0.1",
+          "coverlet.msbuild": "2.8.0",
           "xunit": "2.4.0",
           "xunit.runner.visualstudio": "2.4.0"
         },
@@ -43,6 +44,7 @@
         }
       },
       "coverlet.collector/1.0.1": {},
+      "coverlet.msbuild/2.8.0": {},
       "FluentValidation/8.5.1": {
         "dependencies": {
           "System.ComponentModel.Annotations": "4.6.0"
@@ -1846,6 +1848,13 @@
       "sha512": "sha512-RAuno8s7DBGo2IdV/1d8YSnXMd/728K3PBT5R6/kfGx1yunBZmavlaFQfhGe7Q7N2nUMkvVET+7ITn3+KSg+Uw==",
       "path": "coverlet.collector/1.0.1",
       "hashPath": "coverlet.collector.1.0.1.nupkg.sha512"
+    },
+    "coverlet.msbuild/2.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-W2XppBR6AG5nBZu5XoCT0N0Xv05FSeXyS0gVzlNtddrjXq8iLKOmfedLDRitPItyzIppPdqGQMblcI6l7Y5lVQ==",
+      "path": "coverlet.msbuild/2.8.0",
+      "hashPath": "coverlet.msbuild.2.8.0.nupkg.sha512"
     },
     "FluentValidation/8.5.1": {
       "type": "package",
