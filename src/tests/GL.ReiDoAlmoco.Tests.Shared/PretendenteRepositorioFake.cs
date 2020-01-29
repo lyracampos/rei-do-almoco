@@ -3,6 +3,7 @@ using System.Linq;
 
 namespace GL.ReiDoAlmoco.Tests.Shared
 {
+    //comentário
     public class PretendenteRepositorioFake
     {
         public IEnumerable<Domain.Entities.Pretendente> ListarPretendentes()

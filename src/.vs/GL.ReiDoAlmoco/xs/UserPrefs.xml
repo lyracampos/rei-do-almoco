@@ -1,18 +1,25 @@
 ﻿<Properties StartupConfiguration="{F3451B06-43E7-4055-A7AF-A5D90AB831C4}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="tests/GL.ReiDoAlmoco.Tests.Shared/PretendenteRepositorioFake.cs">
+    <Files>
+      <File FileName="tests/GL.ReiDoAlmoco.Tests.Shared/PretendenteRepositorioFake.cs" Line="6" Column="17" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="GL.ReiDoAlmoco" expanded="True">
-            <Node name="services" expanded="True">
-              <Node name="GL.ReiDoAlmoco.Api" selected="True" />
-              <Node name="GL.ReiDoAlmoco.Domain" expanded="True">
-                <Node name="Dependencies" expanded="True" />
-                <Node name="Services" expanded="True" />
+            <Node name="tests" expanded="True">
+              <Node name="GL.ReiDoAlmoco.Tests.Shared" expanded="True">
+                <Node name="PretendenteRepositorioFake.cs" selected="True" />
               </Node>
-              <Node name="GL.ReiDoAlmoco.Domain.Shared" expanded="True">
-                <Node name="Entities" expanded="True" />
-              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="GL.ReiDoAlmoco" expanded="True">
+            <Node name="tests" expanded="True">
+              <Node name="GL.ReiDoAlmoco.Api.Tests" selected="True" />
             </Node>
           </Node>
         </State>
