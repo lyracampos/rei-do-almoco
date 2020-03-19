@@ -32,7 +32,7 @@ steps:
 - task: VSTest@2
   displayName: 'Run All Automated Unit Tests'
   inputs:
-    runSettingsFile: 'Config.runsettings'
+    #runSettingsFile: 'Config.runsettings'
     codeCoverageEnabled: true
     testRunTitle: 'ProjectName - Automated Unit Tests'
     platform: '$(BuildPlatform)'
