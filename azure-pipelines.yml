@@ -3,6 +3,10 @@ trigger:
 
 pool:
   vmImage: 'windows-latest'
+  demands:
+    - msbuild
+    - visualstudio
+    - vstest
 
 variables:
   solution: '**/*.sln'
