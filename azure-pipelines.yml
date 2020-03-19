@@ -39,12 +39,13 @@ steps:
     arguments: '--configuration $(buildConfiguration)'
   
 - task: DotNetCoreCLI@2
+  displayName: dotnet test
   inputs:
     command: 'test'
     projects: '**/*Test*.csproj'
     arguments: '--configuration $(BuildConfiguration) --collect "Code coverage"'
     testRunTitle: 'dotnet test'
-    
+
 - task: SonarQubeAnalyze@4
   displayName: Sonar qube Analysis
 
@@ -73,7 +74,7 @@ steps:
       $outfile = "$([System.IO.Path]::GetFileNameWithoutExtension($_.FullName)).coveragexml"
       $output = [System.IO.Path]::Combine([System.IO.Path]::GetDirectoryName($_.FullName), $outfile)
       "Analyse '$($_.Name)' with output '$outfile'..."
-      . "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Team Tools\Dynamic Code Coverage Tools\CodeCoverage.exe" analyze /output:$output $_.FullName
+      . $env:USERPROFILE\.nuget\packages\microsoft.codecoverage\15.8.0\build\netstandard1.0\CodeCoverage\CodeCoverage.exe analyze /output:$output $_.FullName
       }
       "Done"
       
