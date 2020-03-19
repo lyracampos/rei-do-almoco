@@ -17,16 +17,28 @@ steps:
     restoreSolution: '$(solution)'
 
 - task: DotNetCoreCLI@2
+  displayName: dotnet restore
   inputs:
-    command: 'restore'
+    command: restore
     projects: '**/*.csproj'
 
 - task: DotNetCoreCLI@2
-  displayName: Build
+  displayName: dotnet build
   inputs:
     command: build
     projects: '$(solution)'
     arguments: '--configuration $(buildConfiguration)'
+  
+- task: VSTest@2
+  displayName: 'Run All Automated Unit Tests'
+  inputs:
+    runSettingsFile: 'Config.runsettings'
+    codeCoverageEnabled: true
+    testRunTitle: 'ProjectName - Automated Unit Tests'
+    platform: '$(BuildPlatform)'
+    configuration: '$(BuildConfiguration)'
+    diagnosticsEnabled: True
+  continueOnError: false 
 
 #- task: VSBuild@1
 #  inputs:
