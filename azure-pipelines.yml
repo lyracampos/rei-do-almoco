@@ -19,8 +19,8 @@ steps:
   inputs:
     SonarQube: 'SandBox-Sonarqube'
     scannerMode: 'MSBuild'
-    projectKey: 'Rei-Do-Almoco'
-    projectName: 'Rei do Almoco'
+    projectKey: 'Teste Sonarqube'
+    projectName: 'Teste Sonarqube'
     extraProperties: 'sonar.cs.vscoveragexml.reportsPaths=**/*.coveragexml'
 
 - task: NuGetToolInstaller@1
