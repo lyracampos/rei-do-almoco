@@ -19,7 +19,7 @@ steps:
   inputs:
     SonarQube: 'SandBox-Sonarqube'
     scannerMode: 'MSBuild'
-    projectKey: 'Teste Sonarqube'
+    projectKey: 'Teste-Sonarqube'
     projectName: 'Teste Sonarqube'
     extraProperties: 'sonar.cs.vscoveragexml.reportsPaths=**/*.coveragexml'
 
